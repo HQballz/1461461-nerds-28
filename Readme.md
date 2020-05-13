@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Maxim Shvets](https://up.htmlacademy.ru/htmlcss/28/user/1461461).
-* Наставник: `Фёдор Базанов`.(https://htmlacademy.ru/profile/beacon).
+* Наставник: [Фёдор Базанов].(https://htmlacademy.ru/profile/beacon).
 
 ---
 
