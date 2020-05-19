@@ -15,40 +15,33 @@
                 <li><a href="#">Контакты</a></li>
             </ul>            
         </nav>
-        <div><a href="#">Корзина</a></div>
+        <div><a href="#"><img src="img/cart-icon.svg" alt="cart">Корзина</a></div>
     </header>
 
     <main>
         <h1>Магазин готовых шаблонов</h1>
         <section>
-            <div>
+            <form action="" method="get">
                 <h4>Стоимость:</h4>
                 <ul>
                     <li><span>{JS}</span></li>
                     <li>От <span>{JS}</span> До <span>{JS}</span></li>
                 </ul>
-            </div>
-            <div>
+
                 <h4>Сетка:</h4>
-                <ul>
-                    <li>Адаптивная</li>
-                    <li>Фиксированная</li>
-                    <li>Резиновая</li>
-                </ul>
-            </div>
-            <div>
+                    <label for="submit"><input type="radio" checked name="сетка" value="Адаптивная">Адаптивная</label><br>
+                    <label for="submit"><input type="radio" name="сетка" value="Фиксированная">Фиксированная</label><br>
+                    <label for="submit"><input type="radio" name="сетка" value="Резиновая">Резиновая</label><br>
+
                 <h4>Особенности:</h4>
-                <ul>
-                    <li>Слайдер</li>
-                    <li>Блок преимуществ</li>
-                    <li>Новости</li>
-                    <li>Галерея</li>
-                    <li>Корзина</li>
-                </ul>
-            </div>
-            <div>
-                <button type="submit">Показать</button>
-            </div>
+                    <label for="submit"><input type="checkbox" checked name="Слайдер">Слайдер</label><br>
+                    <label for="submit"><input type="checkbox" name="Блок преимуществ">Блок преимуществ</label><br>
+                    <label for="submit"><input type="checkbox" checked name="Новости">Новости</label><br>
+                    <label for="submit"><input type="checkbox" name="Галерея">Галерея</label><br>
+                    <label for="submit"><input type="checkbox" name="Корзина">Корзина</label><br>
+
+                <input type="submit" value="Показать" id="submit">                
+            </form>
         </section>
         
         <section>
@@ -68,6 +61,7 @@
                 <ul>
                     <li>
                         <article>
+                            <img src="img/Mask_Group-5.jpg" width="360" height="576" alt="Sedona">
                             <h4><a href="#">Sedona</a></h4>
                             <p>Информационный сайт для туристов</p>
                             <button type="button">9 900 ₽</button>
@@ -75,36 +69,41 @@
                     </li>
                     <li>
                         <article>
-                            <h4><a href="#">Sedona</a></h4>
-                            <p>Информационный сайт для туристов</p>
+                            <img src="img/Mask_Group.jpg" width="360" height="576" alt="pink">
+                            <h4><a href="#">Pink app</a></h4>
+                            <p>Продуктовый лендинг приложения для iOS и Android</p>
                             <button type="button">9 900 ₽</button>
                         </article>
                     </li>
                     <li>
                         <article>
-                            <h4><a href="#">Sedona</a></h4>
-                            <p>Информационный сайт для туристов</p>
+                            <img src="img/Mask_Group-3.jpg" width="360" height="576" alt="Barbershop">
+                            <h4><a href="#">Barbershop</a></h4>
+                            <p>Сайт салона красоты. Для мужчин, да.</p>
                             <button type="button">9 900 ₽</button>
                         </article>
                     </li>
                     <li>
                         <article>
-                            <h4><a href="#">Sedona</a></h4>
-                            <p>Информационный сайт для туристов</p>
+                            <img src="img/Mask_Group-1.jpg" width="360" height="576" alt="Mishka">
+                            <h4><a href="#">Mishka</a></h4>
+                            <p>Интернет-магазин вязаных игрушек</p>
                             <button type="button">9 900 ₽</button>
                         </article>
                     </li>
                     <li>
                         <article>
-                            <h4><a href="#">Sedona</a></h4>
-                            <p>Информационный сайт для туристов</p>
+                            <img src="img/Mask_Group-4.jpg" width="360" height="576" alt="A Plus">
+                            <h4><a href="#">A Plus</a></h4>
+                            <p>Лендинг курсов повышения квалификации</p>
                             <button type="button">9 900 ₽</button>
                         </article>
                     </li>
                     <li>
                         <article>
-                            <h4><a href="#">Sedona</a></h4>
-                            <p>Информационный сайт для туристов</p>
+                            <img src="img/Mask_Group-2.jpg" width="360" height="576" alt="Кваст">
+                            <h4><a href="#">Кваст</a></h4>
+                            <p>Промо-сайт производителя крафтового кваса</p>
                             <button type="button">9 900 ₽</button>
                         </article>
                     </li>
@@ -134,9 +133,9 @@
 
     <footer>
         <ul>
-            <li><a href="https://vk.com">Vkontakte</a></li>
-            <li><a href="https://facebook.com">Facebook</a></li>
-            <li><a href="https://instagram.com">Instagram</a></li>
+            <li><a href="https://vk.com"><img src="img/vk-icon.svg" alt="vk"></a></li>
+            <li><a href="https://facebook.com"><img src="img/fb-icon.svg" alt="facebook"></a></li>
+            <li><a href="https://instagram.com"><img src="img/insta-icon.svg" alt="instagram"></a></li>
         </ul>
         <p><strong>Давайте дружить, это выгодно!</strong></p>
         <p>Скидка 10% для друзей из социальных сетей.</p>
