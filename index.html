@@ -8,7 +8,7 @@
 
     <header>
       <nav>
-        <a>
+        <a href="#">
           <img src="img/nerds-logo.svg" alt="nerds-logo">
         </a>
         
@@ -40,21 +40,21 @@
             <h3>Долго, дорого, скрупулезно.</h3>
             <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
             <a href="#">Узнать больше</a>
-            <img src="img/slide_smarts.jpg" alt="slide-1" width="760" height="431"> 
+            <img src="img/slide_smarts.jpg" alt="смартфоны" width="760" height="431"> 
           </div>
 
           <div>
             <h3>Любим математику как никто другой</h3>
             <p>Никакого креатива, только математические формулы<br> для расчета идеальных пропорций</p>
             <a href="#">Узнать больше</a>
-            <img src="img/slide-desc.jpg" alt="slide-2" width="760" height="431"> 
+            <img src="img/slide-desc.jpg" alt="десктопы" width="760" height="431"> 
           </div>
 
           <div>
             <h3>Только ночь, только хардкор</h3>
             <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
             <a href="#">Узнать больше</a>
-            <img src="img/slide-tablet.jpg" alt="slide-3" width="760" height="431"> 
+            <img src="img/slide-tablet.jpg" alt="планшеты" width="760" height="431"> 
           </div>
         </div>
 
@@ -63,7 +63,6 @@
           <button type="button">.</button>
           <button type="button">.</button>          
         </div>
-
       </section>
 
       <section>
@@ -94,7 +93,6 @@
           <p>Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
           <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br> превыше креатива. Работаем не покладая рук, как роботы.</p>        
         </div>
-
         <div>
           <strong>Выполняем заказы на разработку:</strong>
           <ul>
@@ -103,7 +101,6 @@
             <li>Слайдшоу и видео для корпоративных презентаций</li>
           </ul>
         </div>
-
         <div>
           <img src="img/logo-main.png" alt="logo-main">
           <strong>с 2004 года Любим точность во всем:</strong>
@@ -143,21 +140,25 @@
           <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
           <button type="submit">Напишите нам</button>
         </div>
-        <img src="img/map.png" alt="maps" width="1440" height="416">
+        <img src="img/map.png" width="1440" height="416" alt="maps">
         <img src="img/map-marker.png" width="231" height="190" alt="marker">
       </section>
 
-      <section>
-        <form action="#">
+      <section class="visually-hidden">
+        <button type="button"><img src="img/cross.svg" alt="закрыть форму"></button>
+        <form action="https://echo.htmlacademy.ru" method="post">
           <fieldset>
             <legend>Напишите нам</legend>
-            <label for="name">Ваше имя:</label>
-            <input type="text" name="name" id="name">
-            <label for="email">Ваш email:</label>
-            <input type="email" name="email" id="email">
-            <label for="text">Текст письма:</label>
-            <textarea name="text" id="text" cols="30" rows="10">В свободной форме</textarea>
-            <input type="submit" value="отправить">
+            <label>Ваше имя:
+              <input type="text" name="name" placeholder="Имя Фамилия" required>
+            </label>
+            <label>Ваш email:
+              <input type="email" name="email" placeholder="email@example.com" required>
+            </label>
+            <label>Текст письма:
+              <textarea name="text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+            </label>
+            <button type="submit">Отправить</button>
           </fieldset>
         </form>
       </section>
@@ -181,7 +182,6 @@
           </a>
         </li>
       </ul>
-
       <p><strong>Давайте дружить, это выгодно!</strong></p>
       <p>Скидка 10% для друзей из социальных сетей.</p>
     </footer>

@@ -36,62 +36,70 @@
     <main>
         <h1>Магазин готовых шаблонов</h1>
         <section>
-            <form action="" method="get">
+            <form action="https://echo.htmlacademy.ru" method="get">
                 <!--начало блока для JS-->
-                <h4>Стоимость:</h4>
-                    <span>(шкала цены){JS}</span>
-                     (показатели цены)От <span>{JS}</span> До <span>{JS}</span>
+                <fieldset>
+                    <legend>Стоимость:</legend>
+                    <ul>
+                        <li>
+                            <span>(шкала цены){JS}</span>                            
+                        </li>
+                        <li>
+                            (показатели цены)От <span>{JS}</span> До <span>{JS}</span>
+                        </li>
+                    </ul>
+                </fieldset>
                 <!--конец блока для JS-->
 
-                <h4>Сетка:</h4>
-                <ul>
-                    <li>
-                        <label>
-                            <input type="radio" checked name="grid">Адаптивная
-                        </label>
-                    </li>
-                    <li>
-                        <label>
-                            <input type="radio" name="grid">Фиксированная
-                        </label>
-                    </li>
-                    <li>
-                        <label>
-                            <input type="radio" name="grid">Резиновая
-                        </label>
-                    </li>
-                </ul>
+                <fieldset>
+                    <legend>Сетка:</legend>
+                    <ul>
+                        <li>
+                            <input type="radio" name="grid" value="adaptived" id="grid-adaptived" checked>
+                            <label for="grid-adaptived">Адаптивная</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="grid" value="fixed" id="grid-fixed">
+                            <label for="grid-fixed">Фиксированная</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="grid" value="rubbered" id="grid-rubbered">
+                            <label for="grid-rubbered">Резиновая</label>   
+                        </li>
+                    </ul>
+                </fieldset>
 
-                <h4>Особенности:</h4>
-                <ul>
-                    <li>
-                        <label>
-                            <input type="checkbox" checked name="slider">Слайдер
-                        </label>
-                    </li>
-                    <li>
-                        <label>
-                            <input type="checkbox" name="advantages">Блок преимуществ
-                        </label>
-                    </li>
-                    <li>
-                        <label>
-                            <input type="checkbox" checked name="news">Новости
-                        </label>
-                    </li>
-                    <li>
-                        <label>
-                            <input type="checkbox" name="galery">Галерея
-                        </label>
-                    </li>
-                    <li>
-                        <label>
-                            <input type="checkbox" name="cart">Корзина
-                        </label>
-                    </li>
-                </ul>
-
-                <input type="submit" value="Показать" id="submit">                
+                <fieldset>
+                    <legend>Особенности:</legend>
+                    <ul>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="slider" checked>Слайдер
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="advantages">Блок преимуществ
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="news" checked>Новости
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="galery">Галерея
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="cart">Корзина
+                            </label>  
+                        </li>
+                    </ul> 
+                </fieldset>
+                <button type="submit">Показать</button>                
             </form>
         </section>
         
@@ -116,7 +124,6 @@
                     </li>
                 </ul>
             </div>
-
             <div>
                 <ul>
                     <li>
@@ -207,22 +214,25 @@
                 <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
                 <button type="submit">Напишите нам</button>
             </div>
-            
-            <img src="img/map.png" alt="maps" width="1440" height="416">
+            <img src="img/map.png" width="1440" height="416" alt="maps">
             <img src="img/map-marker.png" width="231" height="190" alt="marker">
         </section>
 
-        <section>
-            <form action="#">
+        <section class="visually-hidden">
+            <button type="button"><img src="img/cross.svg" alt="закрыть форму"></button>
+            <form action="https://echo.htmlacademy.ru" method="post">
                 <fieldset>
                     <legend>Напишите нам</legend>
-                    <label for="name">Ваше имя:</label>
-                    <input type="text" name="name" id="name">
-                    <label for="email">Ваш email:</label>
-                    <input type="email" name="email" id="email">
-                    <label for="text">Текст письма:</label>
-                    <textarea name="text" id="text" cols="30" rows="10">В свободной форме</textarea>
-                    <input type="submit" value="отправить">
+                    <label>Ваше имя:
+                        <input type="text" name="name" placeholder="Имя Фамилия" required>
+                    </label>
+                    <label>Ваш email:
+                        <input type="email" name="email" placeholder="email@example.com" required>
+                    </label>
+                    <label>Текст письма:
+                        <textarea name="text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+                    </label>
+                    <button type="submit">Отправить</button>
                 </fieldset>
             </form>
         </section>
@@ -247,7 +257,6 @@
                 </a>
             </li>
         </ul>
-
         <p><strong>Давайте дружить, это выгодно!</strong></p>
         <p>Скидка 10% для друзей из социальных сетей.</p>
     </footer>
