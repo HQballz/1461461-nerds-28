@@ -38,17 +38,22 @@
         <section>
             <form action="https://echo.htmlacademy.ru" method="get">
                 <!--начало блока для JS-->
-                <fieldset>
-                    <legend>Стоимость:</legend>
-                    <ul>
-                        <li>
-                            <span>(шкала цены){JS}</span>                            
-                        </li>
-                        <li>
-                            (показатели цены)От <span>{JS}</span> До <span>{JS}</span>
-                        </li>
-                    </ul>
-                </fieldset>
+                <div class="form__block form-range">
+                    <div class="form-range__scale">
+                        <button type="button" class="form-range__control" aria-label="..."></button>
+                        <button type="button" class="form-range__control" aria-label="..."></button>
+                    </div>
+                    <div class="form-range__fields">
+                        <label class="form-range__label">
+                            от
+                            <input type="text OR number" name="min-price" class="form-range__input">
+                        </label>
+                        <label class="form-range__label">
+                            до
+                            <input type="text OR number" name="max-price" class="form-range__input">
+                        </label>
+                    </div>
+                </div>
                 <!--конец блока для JS-->
 
                 <fieldset>
@@ -124,7 +129,7 @@
                     <li>
                         <article>
                             <img src="img/sedona.jpg" width="360" height="576" alt="Sedona">
-                            <div class="visually-hidden">
+                            <div>
                                 <a href="#">
                                     <h4>Sedona</h4>
                                 </a>
@@ -136,7 +141,7 @@
                     <li>
                         <article>
                             <img src="img/pink_app.jpg" width="360" height="576" alt="pink">
-                            <div class="visually-hidden">
+                            <div>
                                 <a href="#">
                                     <h4>Pink app</h4>
                                 </a>
@@ -148,7 +153,7 @@
                     <li>
                         <article>
                             <img src="img/barbershop.jpg" width="360" height="576" alt="Barbershop">
-                            <div class="visually-hidden">
+                            <div>
                                 <a href="#">
                                     <h4>Barbershop</h4>
                                 </a>
@@ -160,7 +165,7 @@
                     <li>
                         <article>
                             <img src="img/mishka.jpg" width="360" height="576" alt="Mishka">
-                            <div class="visually-hidden">
+                            <div>
                                 <a href="#">
                                     <h4>Mishka</h4>
                                 </a>
@@ -172,7 +177,7 @@
                     <li>
                         <article>
                             <img src="img/a_plus.jpg" width="360" height="576" alt="A Plus">
-                            <div class="visually-hidden">
+                            <div>
                                 <a href="#">
                                     <h4>A Plus</h4>
                                 </a>
@@ -184,7 +189,7 @@
                     <li>
                         <article>
                             <img src="img/kvast.jpg" width="360" height="576" alt="Кваст">
-                            <div class="visually-hidden">
+                            <div>
                                 <a href="#">
                                     <h4>Кваст</h4>
                                 </a>
@@ -226,21 +231,19 @@
         </section>
 
         <section class="visually-hidden">
-            <button type="button"><img src="img/cross.svg" alt="закрыть форму"></button>
+            <button type="button" class="cross"></button>
             <form action="https://echo.htmlacademy.ru" method="post">
-                <fieldset>
-                    <legend>Напишите нам</legend>
-                    <label>Ваше имя:
-                        <input type="text" name="name" placeholder="Имя Фамилия" required>
-                    </label>
-                    <label>Ваш email:
-                        <input type="email" name="email" placeholder="email@example.com" required>
-                    </label>
-                    <label>Текст письма:
-                        <textarea name="text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
-                    </label>
-                    <button type="submit">Отправить</button>
-                </fieldset>
+                <legend>Напишите нам</legend>
+                <label>Ваше имя:
+                    <input type="text" name="name" placeholder="Имя Фамилия" required>
+                </label>
+                <label>Ваш email:
+                    <input type="email" name="email" placeholder="email@example.com" required>
+                </label>
+                <label>Текст письма:
+                    <textarea name="text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+                </label>
+                <button type="submit">Отправить</button>
             </form>
         </section>
     </main>
