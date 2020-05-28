@@ -11,7 +11,7 @@
     --more-red: #E74246;
     --very-red: #D7373B;
     --basic-green: #00CA74;
-    --more-greem: #00BC6C;
+    --more-green: #00BC6C;
     --very-green: #00AA62;
     --basic-yellow: #EFC84A;
     --more-yellow: #EAB534;
@@ -60,7 +60,7 @@ img {
     margin: -1px;
 }
 
-.button {  
+.button-red {  
     font: inherit;  
     width: 160px;
     height: 50px;      
@@ -73,13 +73,57 @@ img {
     border-radius: 3px;
 }
 
-.button:hover {
+.button-red:hover {
     background-color: var(--more-red);
 }
 
-.button:active {
+.button-red:active {
     background-color: var(--very-red);
     color: var(--basic-white-transparent-1lvl);
+}
+
+.button-green {  
+    font: inherit;  
+    width: 160px;
+    height: 50px;      
+    text-align: center;
+    color: var(--basic-white);
+    background-color: var(--basic-green);
+    vertical-align: middle;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 3px;
+}
+
+.button-green:hover {
+    background-color: var(--more-green);
+}
+
+.button-green:active {
+    background-color: var(--very-green);
+    color: var(--basic-white-transparent-1lvl);
+}
+
+.button-yellow {  
+    font: inherit;  
+    width: 160px;
+    height: 50px;      
+    text-align: center;
+    color: var(--basic-white);
+    background-color: var(--basic-yellow);
+    vertical-align: middle;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 3px;
+}
+
+.button-yellow:hover {
+    background-color: var(--more-yellow);    
+}
+
+.button-yellow:active {
+    background-color: var(--very-yellow);
+    color: var(--basic-white-transparent-1lvl);    
 }
 
 .title {
@@ -92,6 +136,7 @@ img {
 /* header style start */
 
 /* Main navigation */
+
 
 .main-header {
     font-size: 16px;
@@ -245,6 +290,14 @@ img {
     line-height: 30px;
 }
 
+.catalog-title:hover {
+    color: var(--basic-red);
+}
+
+.catalog-title:active {
+    color: var(--basic-black-transparent-1lvl);
+}
+
 .catalog-description {
     text-align: center;
     font-size: 16px;
@@ -267,6 +320,15 @@ img {
     text-transform: uppercase;
     border: none;
     border-radius: 3px;
+}
+
+.catalog-button:hover {
+    background-color: var(--more-red);
+}
+
+.catalog-button:active {
+    background-color: var(--very-red);
+    color: var(--basic-white-transparent-1lvl);
 }
 
 /* catalog style end */
