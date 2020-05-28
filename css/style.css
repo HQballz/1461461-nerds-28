@@ -22,7 +22,9 @@
     --dark-grey: #4D4D4D;
     --alternative-grey: #E1E1E1;
     --alternative-black: #283136;
+    --alternative-black-transparent-1lvl: rgba(40,49,54,0.3);
     --light-grey: #888888;
+    --alternative-grey-v2: #666666;
 }
 
 
@@ -124,14 +126,6 @@ img {
     color: var(--basic-black-transparent-1lvl);
 }
 
-.cart-img {
-    background-image: url(/img/cart-icon.svg);
-    background-size: 16px; 
-    display :inline-block;
-    vertical-align: bottom;
-    padding-left: 25px;
-}
-
 /* header style end */
 
 
@@ -176,30 +170,14 @@ img {
 
 /* footer style start */
 
-/* social style */
-
 .social-list {
     list-style: none;
 }
 
-.social-button {
-    font: inherit;  
-    text-align: center;
-    vertical-align: middle;
-    text-transform: uppercase;
-    padding: 30px;
-    background-color: var(--basic-grey);
-    border-radius: 50%;
-}
+/* social style */
 
-.social-button:hover {
-    background-color: var(--basic-red);
-}
-
-.social-button:active {
-    color: var(--basic-white-transparent-1lvl);
-    background-color: var(--very-red);
-    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+.social-list {
+    list-style: none;
 }
 
 /* attraction style */
@@ -225,26 +203,70 @@ img {
 
 /* form style */
 
-.bold {
+.legend {
     font-weight: bold;
     font-size: 18px;
     line-height: 30px;
 }
 
-.list-radio {
-    list-style: none;
-    color: var(--alternative-black);
+.label {
+    color: var(--alternative-black)
 }
 
-.input-radio {
-    color: var(--dark-grey);
+.form-button {
+    font: inherit;  
+    width: 250px;
+    height: 50px;      
+    text-align: center;
+    color: var(--basic-black);
+    background-color: var(--basic-grey);
+    vertical-align: middle;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 3px;
 }
 
-.label-radio {
-    
+.form-button:hover {
+    background-color: var(--more-grey);
 }
 
-.list-checkbox {
-    list-style: none;
-    color: var(--alternative-black);
+.form-button:active {
+    background-color: var(--very-grey);
+    color: var(--basic-black-transparent-3lvl);
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
+
+/* catalog style */
+
+.catalog-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.catalog-description {
+    text-align: center;
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--alternative-grey-v2);
+}
+
+.catalog-depiction {
+    background-color: var(--basic-grey);
+}
+
+.catalog-button {
+    font: inherit;  
+    width: 200px;
+    height: 50px;      
+    text-align: center;
+    color: var(--basic-white);
+    background-color: var(--basic-red);
+    vertical-align: middle;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 3px;
+}
+
+/* catalog style end */
