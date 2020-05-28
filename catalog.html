@@ -3,80 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <title>Каталог</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html">
+    <header class="main-header">
+        <nav class="main-navigation">
+            <a class="main-header-logo" href="index.html">
                 <img src="img/nerds-logo.svg" alt="nerds-logo">
             </a>
-
-            <ul>
-                <li>
-                    <a href="#">Студия</a>
-                </li>
-                <li>
-                    <a href="#">Клиенты</a>
-                </li>
-                <li>
-                    <a href="#">Магазин</a>
-                </li>
-                <li>
-                    <a href="#">Контакты</a>
-                </li>
-            </ul>            
+            <div class="main-navigation-wrapper">
+                <ul class="site-navigation">
+                    <li>
+                        <a href="#">Студия</a>
+                    </li>
+                    <li>
+                        <a href="#">Клиенты</a>
+                    </li>
+                    <li>
+                        <a href="#">Магазин</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>                 
+            </div>
         </nav>
 
-        <div>
-            <a href="#">Корзина</a>
+        <div class="cart">
+            <a href="#"><span class="cart-img"></span>Корзина</a>
         </div>
     </header>
 
     
     <main>
-        <h1>Магазин готовых шаблонов</h1>
+        <h1 class="title shop">Магазин готовых шаблонов</h1>
         <section>
             <form action="https://echo.htmlacademy.ru" method="get">
                 <!--начало блока для JS-->
-                <div class="form__block form-range">
-                    <div class="form-range__scale">
-                        <button type="button" class="form-range__control" aria-label="..."></button>
-                        <button type="button" class="form-range__control" aria-label="..."></button>
-                    </div>
-                    <div class="form-range__fields">
-                        <label class="form-range__label">
-                            от
-                            <input type="number" name="min-price" class="form-range__input">
-                        </label>
-                        <label class="form-range__label">
-                            до
-                            <input type="number" name="max-price" class="form-range__input">
-                        </label>
-                    </div>
-                </div>
+                <fieldset>
+                    <legend class="bold">Стоимость:</legend>
+                    <div class="form__block form-range">
+                        <div class="form-range__scale">
+                            <button type="button" class="form-range__control" aria-label="..."></button>
+                            <button type="button" class="form-range__control" aria-label="..."></button>
+                        </div>
+                        <div class="form-range__fields">
+                            <label class="form-range__label">
+                                от
+                                <input type="number" name="min-price" class="form-range__input">
+                            </label>
+                            <label class="form-range__label">
+                                до
+                                <input type="number" name="max-price" class="form-range__input">
+                            </label>
+                        </div>
+                    </div>                    
+                </fieldset>
                 <!--конец блока для JS-->
 
                 <fieldset>
-                    <legend>Сетка:</legend>
-                    <ul>
+                    <legend class="bold">Сетка:</legend>
+                    <ul class="list-radio">
                         <li>
-                            <input type="radio" id="grid-adaptived" name="grid" value="adaptived"  checked>
-                            <label for="grid-adaptived">Адаптивная</label>
+                            <input type="radio" id="grid-adaptived" name="grid" value="adaptived"  checked class="input-radio">
+                            <label for="grid-adaptived" class="label-radio">Адаптивная</label>
                         </li>
                         <li>
-                            <input type="radio" id="grid-fixed" name="grid" value="fixed" >
-                            <label for="grid-fixed">Фиксированная</label>
+                            <input type="radio" id="grid-fixed" name="grid" value="fixed" class="input-radio">
+                            <label for="grid-fixed" class="label-radio">Фиксированная</label>
                         </li>
                         <li>
-                            <input type="radio" id="grid-rubbered" name="grid" value="rubbered" >
-                            <label for="grid-rubbered">Резиновая</label>   
+                            <input type="radio" id="grid-rubbered" name="grid" value="rubbered" class="input-radio">
+                            <label for="grid-rubbered" class="label-radio">Резиновая</label>   
                         </li>
                     </ul>
                 </fieldset>
 
                 <fieldset>
-                    <legend>Особенности:</legend>
-                    <ul>
+                    <legend class="bold">Особенности:</legend>
+                    <ul class="list-checkbox">
                         <li>
                             <label for="slider">Слайдер</label>
                             <input type="checkbox" id="slider" name="slider" value="slider" checked>
@@ -99,7 +106,7 @@
                         </li>
                     </ul> 
                 </fieldset>
-                <button type="submit">Показать</button>                
+                <button type="submit" class="">Показать</button>                
             </form>
         </section>
         

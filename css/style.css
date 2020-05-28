@@ -1,0 +1,250 @@
+/*  Variables  */
+
+:root {
+    --basic-white: #ffffff;
+    --basic-white-transparent-1lvl: rgb(255, 255, 255,0.3);
+    --basic-black: #000000;
+    --basic-black-transparent-1lvl: rgba(0,0,0,0.3);
+    --basic-black-transparent-2lvl: rgba(0,0,0,0.2);
+    --basic-black-transparent-3lvl: rgba(0,0,0,0.1);
+    --basic-red: #FB565A;
+    --more-red: #E74246;
+    --very-red: #D7373B;
+    --basic-green: #00CA74;
+    --more-greem: #00BC6C;
+    --very-green: #00AA62;
+    --basic-yellow: #EFC84A;
+    --more-yellow: #EAB534;
+    --very-yellow: #E5A722;
+    --basic-grey: #EEEEEE;
+    --more-grey: #DFDFDF;
+    --very-grey: #D5D5D5;
+    --dark-grey: #4D4D4D;
+    --alternative-grey: #E1E1E1;
+    --alternative-black: #283136;
+    --light-grey: #888888;
+}
+
+
+/* global */
+
+body {
+    min-width: 1460px;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--basic-black);
+}
+
+a,
+a:visited {
+    text-decoration: none;
+    color: var(--basic-black);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+.button {  
+    font: inherit;  
+    width: 160px;
+    height: 50px;      
+    text-align: center;
+    color: var(--basic-white);
+    background-color: var(--basic-red);
+    vertical-align: middle;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 3px;
+}
+
+.button:hover {
+    background-color: var(--more-red);
+}
+
+.button:active {
+    background-color: var(--very-red);
+    color: var(--basic-white-transparent-1lvl);
+}
+
+.title {
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 55px;
+}
+
+
+/* header style start */
+
+/* Main navigation */
+
+.main-header {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 500;
+    color: var(--basic-black);  
+    background-color: var(--basic-grey);
+}
+
+.site-navigation {
+    list-style: none;
+}
+
+
+/* User navigation */
+
+.site-navigation a,
+.cart a
+ {
+  color: var(--basic-black);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.cart a:hover,
+.cart a:focus {
+  color: var(--basic-red);
+}
+
+.site-navigation a:active,
+.cart a:active {
+    color: var(--basic-black-transparent-1lvl);
+}
+
+.cart-img {
+    background-image: url(/img/cart-icon.svg);
+    background-size: 16px; 
+    display :inline-block;
+    vertical-align: bottom;
+    padding-left: 25px;
+}
+
+/* header style end */
+
+
+/* index style start */
+
+/* main style start*/
+
+/* advantages style */
+
+.advantages {
+    text-align: center;
+    background-color: var(--basic-grey);
+}
+
+
+/* products style */ 
+
+.products {
+    text-align: center;
+}
+
+.products-list {
+    list-style: none;
+}
+
+.products-list h3 {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    text-transform: uppercase;    
+}
+
+.line {
+    border: none;
+    width: 1158px;
+    height: 2px;
+    background-color: var(--basic-grey);    
+}
+
+/* main style end */
+
+
+/* footer style start */
+
+/* social style */
+
+.social-list {
+    list-style: none;
+}
+
+.social-button {
+    font: inherit;  
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    padding: 30px;
+    background-color: var(--basic-grey);
+    border-radius: 50%;
+}
+
+.social-button:hover {
+    background-color: var(--basic-red);
+}
+
+.social-button:active {
+    color: var(--basic-white-transparent-1lvl);
+    background-color: var(--very-red);
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+/* attraction style */
+
+.attraction {
+    font-size: 36px;
+    line-height: 36px;
+}
+
+/* footer style end */
+
+/* index style end */
+
+
+/* catalog style start */
+
+/* title style */
+
+.shop {
+    text-align: center;
+    background-color: var(--basic-grey);
+}
+
+/* form style */
+
+.bold {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.list-radio {
+    list-style: none;
+    color: var(--alternative-black);
+}
+
+.input-radio {
+    color: var(--dark-grey);
+}
+
+.label-radio {
+    
+}
+
+.list-checkbox {
+    list-style: none;
+    color: var(--alternative-black);
+}
