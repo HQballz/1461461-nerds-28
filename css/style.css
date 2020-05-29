@@ -1,12 +1,12 @@
 /*  Variables  */
 
 :root {
-    --basic-white: #ffffff;
-    --basic-white-transparent-1lvl: rgb(255, 255, 255,0.3);
-    --basic-black: #000000;
-    --basic-black-transparent-1lvl: rgba(0,0,0,0.3);
-    --basic-black-transparent-2lvl: rgba(0,0,0,0.2);
-    --basic-black-transparent-3lvl: rgba(0,0,0,0.1);
+    --white: #ffffff;
+    --white-transparent-1lvl: rgb(255, 255, 255, 0.3);
+    --black-1: #000000;
+    --black-1-transparent-1lvl: rgba(0, 0, 0, 0.3);
+    --black-1-transparent-2lvl: rgba(0, 0, 0, 0.2);
+    --black-1-transparent-3lvl: rgba(0, 0, 0, 0.1);
     --basic-red: #FB565A;
     --more-red: #E74246;
     --very-red: #D7373B;
@@ -16,15 +16,15 @@
     --basic-yellow: #EFC84A;
     --more-yellow: #EAB534;
     --very-yellow: #E5A722;
-    --basic-grey: #EEEEEE;
-    --more-grey: #DFDFDF;
-    --very-grey: #D5D5D5;
-    --dark-grey: #4D4D4D;
-    --alternative-grey: #E1E1E1;
-    --alternative-black: #283136;
-    --alternative-black-transparent-1lvl: rgba(40,49,54,0.3);
+    --grey-1: #EEEEEE;
+    --more-grey-1: #DFDFDF;
+    --very-grey-2: #D5D5D5;
+    --dark-grey-3: #4D4D4D;
+    --grey-2: #E1E1E1;
+    --black-2: #283136;
+    --black-2-transparent-1lvl: rgba(40, 49, 54, 0.3);
     --light-grey: #888888;
-    --alternative-grey-v2: #666666;
+    --grey-3: #666666;
 }
 
 
@@ -38,13 +38,13 @@ body {
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
-    color: var(--basic-black);
+    color: var(--black-1);
 }
 
 a,
 a:visited {
     text-decoration: none;
-    color: var(--basic-black);
+    color: var(--black-1);
 }
 
 img {
@@ -60,17 +60,24 @@ img {
     margin: -1px;
 }
 
-.button-red {  
+.button {
     font: inherit;  
     width: 160px;
     height: 50px;      
     text-align: center;
-    color: var(--basic-white);
-    background-color: var(--basic-red);
     vertical-align: middle;
     text-transform: uppercase;
     border: none;
     border-radius: 3px;
+}
+
+.button:active {
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.button-red {  
+    color: var(--white);
+    background-color: var(--basic-red);
 }
 
 .button-red:hover {
@@ -79,20 +86,12 @@ img {
 
 .button-red:active {
     background-color: var(--very-red);
-    color: var(--basic-white-transparent-1lvl);
+    color: var(--white-transparent-1lvl);
 }
 
 .button-green {  
-    font: inherit;  
-    width: 160px;
-    height: 50px;      
-    text-align: center;
-    color: var(--basic-white);
+    color: var(--white);
     background-color: var(--basic-green);
-    vertical-align: middle;
-    text-transform: uppercase;
-    border: none;
-    border-radius: 3px;
 }
 
 .button-green:hover {
@@ -101,20 +100,12 @@ img {
 
 .button-green:active {
     background-color: var(--very-green);
-    color: var(--basic-white-transparent-1lvl);
+    color: var(--white-transparent-1lvl);
 }
 
 .button-yellow {  
-    font: inherit;  
-    width: 160px;
-    height: 50px;      
-    text-align: center;
-    color: var(--basic-white);
+    color: var(--white);
     background-color: var(--basic-yellow);
-    vertical-align: middle;
-    text-transform: uppercase;
-    border: none;
-    border-radius: 3px;
 }
 
 .button-yellow:hover {
@@ -123,7 +114,7 @@ img {
 
 .button-yellow:active {
     background-color: var(--very-yellow);
-    color: var(--basic-white-transparent-1lvl);    
+    color: var(--white-transparent-1lvl);    
 }
 
 .title {
@@ -142,8 +133,8 @@ img {
     font-size: 16px;
     line-height: 30px;
     font-weight: 500;
-    color: var(--basic-black);  
-    background-color: var(--basic-grey);
+    color: var(--black-1);  
+    background-color: var(--grey-1);
 }
 
 .site-navigation {
@@ -154,9 +145,8 @@ img {
 /* User navigation */
 
 .site-navigation a,
-.cart a
- {
-  color: var(--basic-black);
+.cart a {
+  color: var(--black-1);
 }
 
 .site-navigation a:hover,
@@ -168,7 +158,7 @@ img {
 
 .site-navigation a:active,
 .cart a:active {
-    color: var(--basic-black-transparent-1lvl);
+    color: var(--black-1-transparent-1lvl);
 }
 
 /* header style end */
@@ -182,7 +172,7 @@ img {
 
 .advantages {
     text-align: center;
-    background-color: var(--basic-grey);
+    background-color: var(--grey-1);
 }
 
 
@@ -207,7 +197,7 @@ img {
     border: none;
     width: 1158px;
     height: 2px;
-    background-color: var(--basic-grey);    
+    background-color: var(--grey-1);    
 }
 
 /* main style end */
@@ -243,7 +233,7 @@ img {
 
 .shop {
     text-align: center;
-    background-color: var(--basic-grey);
+    background-color: var(--grey-1);
 }
 
 /* form style */
@@ -255,30 +245,23 @@ img {
 }
 
 .label {
-    color: var(--alternative-black)
+    color: var(--black-2)
 }
 
 .form-button {
-    font: inherit;  
     width: 250px;
     height: 50px;      
-    text-align: center;
-    color: var(--basic-black);
-    background-color: var(--basic-grey);
-    vertical-align: middle;
-    text-transform: uppercase;
-    border: none;
-    border-radius: 3px;
+    color: var(--black-1);
+    background-color: var(--grey-1);
 }
 
 .form-button:hover {
-    background-color: var(--more-grey);
+    background-color: var(--more-grey-1);
 }
 
 .form-button:active {
-    background-color: var(--very-grey);
-    color: var(--basic-black-transparent-3lvl);
-    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+    background-color: var(--very-grey-2);
+    color: var(--black-1-transparent-3lvl);
 }
 
 /* catalog style */
@@ -295,31 +278,25 @@ img {
 }
 
 .catalog-title:active {
-    color: var(--basic-black-transparent-1lvl);
+    color: var(--black-1-transparent-1lvl);
 }
 
 .catalog-description {
     text-align: center;
     font-size: 16px;
     line-height: 18px;
-    color: var(--alternative-grey-v2);
+    color: var(--grey-3);
 }
 
 .catalog-depiction {
-    background-color: var(--basic-grey);
+    background-color: var(--grey-1);
 }
 
 .catalog-button {
-    font: inherit;  
     width: 200px;
     height: 50px;      
-    text-align: center;
-    color: var(--basic-white);
+    color: var(--white);
     background-color: var(--basic-red);
-    vertical-align: middle;
-    text-transform: uppercase;
-    border: none;
-    border-radius: 3px;
 }
 
 .catalog-button:hover {
@@ -328,7 +305,7 @@ img {
 
 .catalog-button:active {
     background-color: var(--very-red);
-    color: var(--basic-white-transparent-1lvl);
+    color: var(--white-transparent-1lvl);
 }
 
 /* catalog style end */
