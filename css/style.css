@@ -1,6 +1,7 @@
 /*  Variables  */
 
 :root {
+    /* colors */
     --white: #ffffff;
     --white-transparent-1lvl: rgb(255, 255, 255, 0.3);
     --black-1: #000000;
@@ -26,7 +27,12 @@
     --very-green: #00AA62;
     --basic-yellow: #EFC84A;
     --more-yellow: #EAB534;
-    --very-yellow: #E5A722;    
+    --very-yellow: #E5A722;  
+
+    /* font-weights */
+    --font-normal: 400;
+    --font-medium: 500;
+    --font-bold: 700;
 }
 
 
@@ -36,10 +42,10 @@
 
 @font-face {
     font-family: "Roboto";
-    src: local("roboto-v20-latin_cyrillic-regular.woff2"),
-         local("roboto-v20-latin_cyrillic-regular.woff")
-         url("../fonts/roboto-v20-latin_cyrillic-regular.woff2") format("woff2"),
-         url("../fonts/roboto-v20-latin_cyrillic-regular.woff") format("woff");
+    src: local("roboto.woff2"),
+         local("roboto.woff")
+         url("../fonts/roboto-regular.woff2") format("woff2"),
+         url("../fonts/roboto-regular.woff") format("woff");
     font-style: normal;
     font-display: swap;
 }
@@ -48,10 +54,10 @@
 
   @font-face {
     font-family: "Roboto";
-    src: local("roboto-v20-latin_cyrillic-500.woff2")
-         local("roboto-v20-latin_cyrillic-500.woff")
-        url("../fonts/roboto-v20-latin_cyrillic-500.woff2") format("woff2"), 
-         url("../fonts/roboto-v20-latin_cyrillic-500.woff") format("woff");
+    src: local("roboto-500.woff2")
+         local("roboto-500.woff")
+        url("../fonts/roboto-500.woff2") format("woff2"), 
+         url("../fonts/roboto-500.woff") format("woff");
     font-style: normal;
     font-weight: 500;  
     font-display: swap;        
@@ -61,10 +67,10 @@
 
   @font-face {
     font-family: "Roboto";
-    src: local("roboto-v20-latin_cyrillic-700.woff2")
-         local("roboto-v20-latin_cyrillic-700.woff")
-        url("../fonts/roboto-v20-latin_cyrillic-700.woff2") format("woff2"), 
-         url("../fonts/roboto-v20-latin_cyrillic-700.woff") format("woff"); 
+    src: local("roboto-700.woff2")
+         local("roboto-700.woff")
+        url("../fonts/roboto-700.woff2") format("woff2"), 
+         url("../fonts/roboto-700.woff") format("woff"); 
     font-style: normal;
     font-weight: 700;   
     font-display: swap;      
@@ -77,7 +83,7 @@ body {
     font-family: "Roboto", Arial, sans-serif;
     font-size: 16px;
     line-height: 24px;
-    font-weight: 400;
+    font-weight: var(--font-normal);
     color: var(--black-1);
 }
 
@@ -108,7 +114,7 @@ img {
     font: inherit;  
     width: 160px;
     height: 50px;   
-    font-weight: 500;   
+    font-weight: var(--font-medium);   
     text-align: center;
     vertical-align: middle;
     text-transform: uppercase;
@@ -183,7 +189,7 @@ img {
 .title {
     font-size: 55px;
     line-height: 55px;
-    font-weight: 500;    
+    font-weight: var(--font-medium);    
 }
 
 
@@ -195,7 +201,7 @@ img {
 .main-header {
     font-size: 16px;
     line-height: 30px;
-    font-weight: 500;
+    font-weight: var(--font-medium);
     color: var(--black-1);  
     background-color: var(--grey-1);
 }
@@ -256,7 +262,7 @@ img {
 .products-list h3 {
     font-size: 24px;
     line-height: 30px;
-    font-weight: 700;
+    font-weight: var(--font-bold);
     text-transform: uppercase;    
 }
 
@@ -272,7 +278,7 @@ img {
 .activity-title {
     font-size: 45px;
     line-height: 45px;
-    font-weight: 500;
+    font-weight: var(--font-medium);
 }
 
 .activity-text {
@@ -282,7 +288,7 @@ img {
 .options-title {
     color: var(--black-2);
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: var(--font-bold);
 }
 
 .options-list {
@@ -291,13 +297,13 @@ img {
 
 .benefit-title {
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: var(--font-bold);
 }
 
 .benefit-percents {
     font-size: 45px;
     line-height: 64px;
-    font-weight: 700;    
+    font-weight: var(--font-bold);    
 }
 
 .benefit-value {
@@ -315,7 +321,7 @@ img {
     font-size: 18px;
     line-height: 30px;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: var(--font-bold);
 }
 
 .address-direction {
@@ -342,7 +348,7 @@ img {
 .attraction {
     font-size: 36px;
     line-height: 36px;
-    font-weight: 700;
+    font-weight: var(--font-bold);
 }
 
 .attraction-desc {
@@ -374,7 +380,7 @@ img {
 }
 
 .legend {
-    font-weight: 700;
+    font-weight: var(--font-bold);
     font-size: 18px;
     line-height: 30px;
     text-transform: uppercase;
@@ -412,7 +418,7 @@ img {
 
 .catalog-title {
     text-align: center;
-    font-weight: 700;
+    font-weight: var(--font-bold);
     font-size: 18px;
     line-height: 30px;
     text-transform: uppercase;
