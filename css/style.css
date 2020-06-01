@@ -42,8 +42,7 @@
 
 @font-face {
     font-family: "Roboto";
-    src: local("Roboto.woff2"),
-         local("Roboto.woff")
+    src: local("Roboto")
          url("../fonts/roboto-regular.woff2") format("woff2"),
          url("../fonts/roboto-regular.woff") format("woff");
     font-style: normal;
@@ -54,8 +53,8 @@
 
   @font-face {
     font-family: "Roboto";
-    src: local("Roboto Medium.woff2")
-         local("Roboto Medium.woff")
+    src: local("Roboto Medium")
+         local("Roboto-Medium")
          url("../fonts/roboto-500.woff2") format("woff2"), 
          url("../fonts/roboto-500.woff") format("woff");
     font-style: normal;
@@ -67,8 +66,8 @@
 
   @font-face {
     font-family: "Roboto";
-    src: local("Roboto Bold.woff2")
-         local("Roboto Bold.woff")
+    src: local("Roboto Bold")
+         local("Roboto-Bold")
          url("../fonts/roboto-700.woff2") format("woff2"), 
          url("../fonts/roboto-700.woff") format("woff"); 
     font-style: normal;
