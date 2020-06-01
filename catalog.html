@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Каталог</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="css/stylesheet.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -14,7 +14,7 @@
                 <img src="img/nerds-logo.svg" alt="nerds-logo">
             </a>
             <div class="main-navigation-wrapper">
-                <ul class="site-navigation">
+                <ul class="list site-navigation">
                     <li>
                         <a href="#">Студия</a>
                     </li>
@@ -65,7 +65,7 @@
 
                 <fieldset>
                     <legend class="legend">Сетка:</legend>
-                    <ul class="list-radio">
+                    <ul class="list list-radio">
                         <li>
                             <input type="radio" id="grid-adaptived" name="grid" value="adaptived"  checked class="input-radio">
                             <label for="grid-adaptived" class="label label-radio">Адаптивная</label>
@@ -83,56 +83,56 @@
 
                 <fieldset>
                     <legend class="legend">Особенности:</legend>
-                    <ul class="list-checkbox">
+                    <ul class="list list-checkbox">
                         <li>
-                            <label for="slider" class="label">Слайдер</label>
                             <input type="checkbox" id="slider" name="slider" value="slider" checked>
+                            <label for="slider" class="label">Слайдер</label>
                         </li>
                         <li>
-                            <label for="advantages" class="label">Блок преимуществ</label>
                             <input type="checkbox" id="advantages" name="advantages" value="advantages">
+                            <label for="advantages" class="label">Блок преимуществ</label>
                         </li>
                         <li>
-                            <label for="news" class="label">Новости</label>
                             <input type="checkbox" id="news" name="news" value="news" checked>
+                            <label for="news" class="label">Новости</label>
                         </li>
                         <li>
+                            <input type="checkbox" id="galery" name="galery" value="galery">                            
                             <label for="galery" class="label">Галерея</label>
-                            <input type="checkbox" id="galery" name="galery" value="galery">
                         </li>
                         <li>
+                            <input type="checkbox" id="cart" name="cart" value="cart">                            
                             <label for="cart" class="label">Корзина</label> 
-                            <input type="checkbox" id="cart" name="cart" value="cart">
                         </li>
                     </ul> 
                 </fieldset>
-                <button type="submit" class="button form-button">Показать</button>                
+                <button type="submit" class="button form-button button-grey">Показать</button>                
             </form>
         </section>
         
         <section>
             <div>
-                <ul>
-                    <li>
+                <ul class="list sorting-list">
+                    <li class="legend">
                         <strong>Сортировать:</strong>
                     </li>
                     <li>
-                        <a href="#">По цене</a>
+                        <a href="#" class="sorting">По цене</a>
                     </li>
                     <li>
-                        <a href="#">По типу</a>
+                        <a href="#" class="sorting">По типу</a>
                     </li>
                     <li>
-                        <a href="#">По названию</a>
+                        <a href="#" class="sorting">По названию</a>
                     </li>
                     <li>
-                        <a href="#" aria-label="Сортировка по убыванию">↑</a>
-                        <a href="#" aria-label="Сортировка по возрастанию">↓</a>
+                        <a href="#" aria-label="Сортировка по убыванию" class="sorting">↑</a>
+                        <a href="#" aria-label="Сортировка по возрастанию" class="sorting">↓</a>
                     </li>
                 </ul>
             </div>
             <div>
-                <ul>
+                <ul class="list catalog-list">
                     <li>
                         <article>
                             <img src="img/sedona.jpg" width="360" height="576" alt="Sedona">
@@ -141,7 +141,7 @@
                                     <h4 class="catalog-title">Sedona</h4>
                                 </a>
                                 <p class="catalog-description">Информационный сайт для туристов</p>
-                                <button type="button" class="button catalog-button">9 900 ₽</button>                                
+                                <button type="button" class="button catalog-button button-red">9 900 ₽</button>                                
                             </div>
                         </article>
                     </li>
@@ -153,7 +153,7 @@
                                     <h4 class="catalog-title">Pink app</h4>
                                 </a>
                                 <p class="catalog-description">Продуктовый лендинг приложения для iOS и Android</p>
-                                <button type="button" class="button catalog-button">9 900 ₽</button>                                
+                                <button type="button" class="button catalog-button button-red">9 900 ₽</button>                                
                             </div>
                         </article>
                     </li>
@@ -165,7 +165,7 @@
                                     <h4 class="catalog-title">Barbershop</h4>
                                 </a>
                                 <p class="catalog-description">Сайт салона красоты. Для мужчин, да.</p>
-                                <button type="button" class="button catalog-button">9 900 ₽</button>                                
+                                <button type="button" class="button catalog-button button-red">9 900 ₽</button>                                
                             </div>
                         </article>
                     </li>
@@ -177,7 +177,7 @@
                                     <h4 class="catalog-title">Mishka</h4>
                                 </a>
                                 <p class="catalog-description">Интернет-магазин вязаных игрушек</p>
-                                <button type="button" class="button catalog-button">9 900 ₽</button>                                
+                                <button type="button" class="button catalog-button button-red">9 900 ₽</button>                                
                             </div>
                         </article>
                     </li>
@@ -189,7 +189,7 @@
                                     <h4 class="catalog-title">A Plus</h4>
                                 </a>
                                 <p class="catalog-description">Лендинг курсов повышения квалификации</p>
-                                <button type="button" class="button catalog-button">9 900 ₽</button>                                
+                                <button type="button" class="button catalog-button button-red">9 900 ₽</button>                                
                             </div>
                         </article>
                     </li>
@@ -201,37 +201,37 @@
                                     <h4 class="catalog-title">Кваст</h4>
                                 </a>
                                 <p class="catalog-description">Промо-сайт производителя крафтового кваса</p>
-                                <button type="button" class="button catalog-button">9 900 ₽</button>                                
+                                <button type="button" class="button catalog-button button-red">9 900 ₽</button>                                
                             </div>
                         </article>
                     </li>
                 </ul>                
             </div>
 
-            <div>
-                <ul>
+            <div class="pagination">
+                <ul class="list">
                     <li>
-                        <a href="#">1</a>
+                        <a href="#" class="button button-number button-grey">1</a>
                     </li>
                     <li>
-                        <a href="#">2</a>
+                        <a href="#" class="button button-number button-grey">2</a>
                     </li>
                     <li>
-                        <a href="#">3</a>
+                        <a href="#" class="button button-number button-grey">3</a>
                     </li>
                     <li>
-                        <a href="#">Следующая</a>
+                        <a href="#" class="button button-next button-grey">Следующая</a>
                     </li>
                 </ul>
             </div>
         </section>
 
-        <section>
+        <section class="adress">
             <div>
-                <p><strong>nёrds design studio</strong>
-                191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-                <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-                <button type="submit">Напишите нам</button>
+                <p class="address-title"><strong>nёrds design studio</strong></p>
+                <p class="address-direction">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+                <a href="tel:+78122757575" class="address-direction">тел. +7 (812) 275-75-75</a>
+                <button type="submit" class="button button-adress button-red">Напишите нам</button>
             </div>
             <img src="img/map.png" width="1440" height="416" alt="Студия Nerds находится по адресу Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
             <img src="img/map-marker.png" width="231" height="190" alt="marker">
@@ -257,7 +257,7 @@
 
 
     <footer class="footer">
-        <ul  class="social-list">
+        <ul  class="list social-list">
             <li>
                 <a href="https://vk.com" aria-label="Вконтакте" class="social-icon">
                     <img src="img/vk-icon.svg" alt="vk">
@@ -275,7 +275,7 @@
             </li>
         </ul>
         <p class="attraction"><strong>Давайте дружить, это выгодно!</strong></p>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
+        <p class="attraction-desc">Скидка 10% для друзей из социальных сетей.</p>
     </footer>
 </body>
 </html>
