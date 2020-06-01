@@ -32,6 +32,44 @@
 
 /* global */
 
+/* roboto-regular - latin_cyrillic */
+
+@font-face {
+    font-family: "Roboto";
+    src: local("roboto-v20-latin_cyrillic-regular.woff2"),
+         local("roboto-v20-latin_cyrillic-regular.woff")
+         url("../fonts/roboto-v20-latin_cyrillic-regular.woff2") format("woff2"),
+         url("../fonts/roboto-v20-latin_cyrillic-regular.woff") format("woff");
+    font-style: normal;
+    font-display: swap;
+}
+
+  /* roboto-500 - latin_cyrillic */
+
+  @font-face {
+    font-family: "Roboto";
+    src: local("roboto-v20-latin_cyrillic-500.woff2")
+         local("roboto-v20-latin_cyrillic-500.woff")
+        url("../fonts/roboto-v20-latin_cyrillic-500.woff2") format("woff2"), 
+         url("../fonts/roboto-v20-latin_cyrillic-500.woff") format("woff");
+    font-style: normal;
+    font-weight: 500;  
+    font-display: swap;        
+}
+
+  /* roboto-700 - latin_cyrillic */
+
+  @font-face {
+    font-family: "Roboto";
+    src: local("roboto-v20-latin_cyrillic-700.woff2")
+         local("roboto-v20-latin_cyrillic-700.woff")
+        url("../fonts/roboto-v20-latin_cyrillic-700.woff2") format("woff2"), 
+         url("../fonts/roboto-v20-latin_cyrillic-700.woff") format("woff"); 
+    font-style: normal;
+    font-weight: 700;   
+    font-display: swap;      
+}
+
 body {
     min-width: 1460px;
     margin: 0;
@@ -69,7 +107,8 @@ img {
 .button {
     font: inherit;  
     width: 160px;
-    height: 50px;      
+    height: 50px;   
+    font-weight: 500;   
     text-align: center;
     vertical-align: middle;
     text-transform: uppercase;
@@ -79,6 +118,10 @@ img {
 
 .button:active {
     box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.button:visited {
+    color: var(--white);
 }
 
 .button-red {  
@@ -138,9 +181,9 @@ img {
 }
 
 .title {
-    font-weight: 500;
     font-size: 55px;
     line-height: 55px;
+    font-weight: 500;    
 }
 
 
@@ -213,7 +256,7 @@ img {
 .products-list h3 {
     font-size: 24px;
     line-height: 30px;
-    font-weight: bold;
+    font-weight: 700;
     text-transform: uppercase;    
 }
 
@@ -229,6 +272,7 @@ img {
 .activity-title {
     font-size: 45px;
     line-height: 45px;
+    font-weight: 500;
 }
 
 .activity-text {
@@ -238,6 +282,7 @@ img {
 .options-title {
     color: var(--black-2);
     text-transform: uppercase;
+    font-weight: 700;
 }
 
 .options-list {
@@ -246,12 +291,13 @@ img {
 
 .benefit-title {
     text-transform: uppercase;
+    font-weight: 700;
 }
 
 .benefit-percents {
-    font-weight: bold;
     font-size: 45px;
     line-height: 64px;
+    font-weight: 700;    
 }
 
 .benefit-value {
@@ -269,6 +315,7 @@ img {
     font-size: 18px;
     line-height: 30px;
     text-transform: uppercase;
+    font-weight: 700;
 }
 
 .address-direction {
@@ -295,6 +342,7 @@ img {
 .attraction {
     font-size: 36px;
     line-height: 36px;
+    font-weight: 700;
 }
 
 .attraction-desc {
@@ -318,14 +366,23 @@ img {
 
 /* form style */
 
+.form-range__label {
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: var(--black-2);
+}
+
 .legend {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 18px;
     line-height: 30px;
     text-transform: uppercase;
 }
 
 .label {
+    font-size: 16px;
+    line-height: 19px;
     color: var(--black-2)
 }
 
@@ -355,9 +412,10 @@ img {
 
 .catalog-title {
     text-align: center;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 18px;
     line-height: 30px;
+    text-transform: uppercase;
 }
 
 .catalog-title:hover {
