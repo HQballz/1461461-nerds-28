@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Каталог</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <header class="main-header">
+<body class="page-body">
+
+    <header class="main-header container">
         <nav class="main-navigation">
             <a class="main-header-logo" href="index.html">
                 <img src="img/nerds-logo.svg" alt="nerds-logo">
@@ -36,10 +37,10 @@
     </header>
 
     
-    <main>
-        <h1 class="title">Магазин готовых шаблонов</h1>
-        <section>
-            <form action="https://echo.htmlacademy.ru" method="get">
+    <main class="page-catalog container">
+        <h1 class="title page-title">Магазин готовых шаблонов</h1>
+        <section class="filters">
+            <form class="filter" action="https://echo.htmlacademy.ru" method="get">
                 <!--начало блока для JS-->
                 <fieldset>
                     <legend class="legend">Стоимость:</legend>
@@ -109,7 +110,7 @@
             </form>
         </section>
         
-        <section>
+        <section class="catalog">
             <div>
                 <ul class="list sorting-list">
                     <li class="legend">
@@ -132,9 +133,11 @@
             </div>
             <div>
                 <ul class="list catalog-list">
-                    <li>
+                    <li class="catalog-item">
                         <article>
-                            <img src="img/sedona.jpg" width="360" height="576" alt="Sedona">
+                            <p class="catalog-item-image">
+                                <img src="img/sedona.jpg" width="360" height="576" alt="Sedona">
+                            </p>
                             <div class="catalog-depiction">
                                 <a href="#">
                                     <h4 class="catalog-title">Sedona</h4>
@@ -144,9 +147,11 @@
                             </div>
                         </article>
                     </li>
-                    <li>
+                    <li class="catalog-item">
                         <article>
-                            <img src="img/pink_app.jpg" width="360" height="576" alt="pink">
+                            <p class="catalog-item-image">
+                                <img src="img/pink_app.jpg" width="360" height="576" alt="pink">
+                            </p>
                             <div class="catalog-depiction">
                                 <a href="#">
                                     <h4 class="catalog-title">Pink app</h4>
@@ -156,9 +161,11 @@
                             </div>
                         </article>
                     </li>
-                    <li>
+                    <li class="catalog-item">
                         <article>
-                            <img src="img/barbershop.jpg" width="360" height="576" alt="Barbershop">
+                            <p class="catalog-item-image">
+                                <img src="img/barbershop.jpg" width="360" height="576" alt="Barbershop">
+                            </p>
                             <div class="catalog-depiction">
                                 <a href="#">
                                     <h4 class="catalog-title">Barbershop</h4>
@@ -168,9 +175,11 @@
                             </div>
                         </article>
                     </li>
-                    <li>
+                    <li class="catalog-item">
                         <article>
-                            <img src="img/mishka.jpg" width="360" height="576" alt="Mishka">
+                            <p class="catalog-item-image">
+                                <img src="img/mishka.jpg" width="360" height="576" alt="Mishka">
+                            </p>
                             <div class="catalog-depiction">
                                 <a href="#">
                                     <h4 class="catalog-title">Mishka</h4>
@@ -180,9 +189,11 @@
                             </div>
                         </article>
                     </li>
-                    <li>
+                    <li class="catalog-item">
                         <article>
-                            <img src="img/a_plus.jpg" width="360" height="576" alt="A Plus">
+                            <p class="catalog-item-image">
+                                <img src="img/a_plus.jpg" width="360" height="576" alt="A Plus">
+                            </p>
                             <div class="catalog-depiction">
                                 <a href="#">
                                     <h4 class="catalog-title">A Plus</h4>
@@ -192,9 +203,11 @@
                             </div>
                         </article>
                     </li>
-                    <li>
+                    <li class="catalog-item">
                         <article>
-                            <img src="img/kvast.jpg" width="360" height="576" alt="Кваст">
+                            <p class="catalog-item-image">
+                                <img src="img/kvast.jpg" width="360" height="576" alt="Кваст">                                
+                            </p>
                             <div class="catalog-depiction">
                                 <a href="#">
                                     <h4 class="catalog-title">Кваст</h4>
@@ -255,26 +268,28 @@
     </main>
 
 
-    <footer class="footer">
+    <footer class="footer container">
         <ul  class="list social-list">
             <li>
                 <a href="https://vk.com" aria-label="Вконтакте" class="social-icon">
-                    <img src="img/vk-icon.svg" alt="vk">
+                    <img src="img/vk-icon.svg" alt="vk">В
                 </a>
             </li>
             <li>
                 <a href="https://facebook.com" aria-label="Фэйсбук" class="social-icon">
-                    <img src="img/fb-icon.svg" alt="facebook">
+                    <img src="img/fb-icon.svg" alt="facebook">Ф
                 </a>
             </li>
             <li>
                 <a href="https://instagram.com" aria-label="Инстаграм" class="social-icon">
-                    <img src="img/insta-icon.svg" alt="instagram">
+                    <img src="img/insta-icon.svg" alt="instagram">И
                 </a>
             </li>
         </ul>
-        <p class="attraction"><strong>Давайте дружить, это выгодно!</strong></p>
-        <p class="attraction-desc">Скидка 10% для друзей из социальных сетей.</p>
+        <div class="attractions">
+            <p class="attraction"><strong>Давайте дружить, это выгодно!</strong></p>
+            <p class="attraction-desc">Скидка 10% для друзей из социальных сетей.</p>            
+        </div>
     </footer>
 </body>
 </html>

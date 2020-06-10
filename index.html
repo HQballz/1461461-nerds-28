@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="page-body">
 
-    <header class="main-header">
+    <header class="main-header container">
       <nav class="main-navigation">
         <a class="main-header-logo">
           <img src="img/nerds-logo.svg" alt="nerds-logo">
@@ -27,7 +27,7 @@
             <li>
               <a href="#">Контакты</a>
             </li>
-          </ul> 
+          </ul>             
         </div>
       </nav>
 
@@ -36,7 +36,7 @@
       </div>
     </header>
 
-    <main>
+    <main class="container">
       <section class="advantages">
         <div>
           <div class="smarts">
@@ -70,19 +70,19 @@
 
       <section class="products">
         <ul class="products-list">
-          <li>
+          <li class="product">
             <img src="img/web-sites.jpg" width="300" height="146" alt="Веб-сайты">
             <h3>Веб-сайты</h3>
             <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
             <button class="button button-red">Заказать</button>
           </li>
-          <li>
+          <li class="product">
             <img src="img/apps.jpg" width="300" height="146" alt="Приложения">
             <h3>Приложения</h3>
             <p>Покорите топ-10 приложений в AppStore и Google Play</p>
             <button class="button button-green">Заказать</button>
           </li>
-          <li>
+          <li class="product">
             <img src="img/presentations.jpg" width="300" height="146" alt="Презентации">
             <h3>Презентации</h3>
             <p>Вы даже не подозреваете, насколько вы изумительны!</p>
@@ -166,26 +166,28 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer container">
       <ul class="list social-list">
         <li>
           <a href="https://vk.com" aria-label="Вконтакте" class="social-icon">
-            <img src="img/vk-icon.svg" alt="vk">
+            <img src="img/vk-icon.svg" alt="vk">В
           </a>
         </li>
         <li>
           <a href="https://facebook.com" aria-label="Фэйсбук" class="social-icon">
-            <img src="img/fb-icon.svg" alt="facebook">
+            <img src="img/fb-icon.svg" alt="facebook">Ф
           </a>
         </li>
         <li>
           <a href="https://instagram.com" aria-label="Инстаграм" class="social-icon">
-            <img src="img/insta-icon.svg" alt="instagram">
+            <img src="img/insta-icon.svg" alt="instagram">И
           </a>
         </li>
       </ul>
-      <p class="attraction"><strong>Давайте дружить, это выгодно!</strong></p>
-      <p class="attraction-desc">Скидка 10% для друзей из социальных сетей.</p>
+      <div class="attractions">
+        <p class="attraction"><strong>Давайте дружить, это выгодно!</strong></p>
+        <p class="attraction-desc">Скидка 10% для друзей из социальных сетей.</p>        
+      </div>
     </footer>
   </body>
 </html>
