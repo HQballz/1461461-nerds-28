@@ -585,6 +585,7 @@ img {
 }
 
 .catalog-depiction {
+    position: absolute;
     display: none;
     flex-direction: column;
     align-items: center;
