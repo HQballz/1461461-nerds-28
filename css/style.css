@@ -202,6 +202,12 @@ img {
     font-weight: var(--font-medium);    
 }
 
+.title-2 {
+    font-size: 24px;
+    margin: 0;
+    margin-top: 24px;
+}
+
 
 /* header style start */
 
@@ -211,6 +217,7 @@ img {
 .main-header {
     display: flex;
     justify-content: space-around; 
+    align-items: center;
     font-size: 16px;
     line-height: 30px;
     font-weight: var(--font-medium);
@@ -234,6 +241,8 @@ img {
 }
 
 .site-navigation {
+    display: flex;
+    justify-content: space-around;
     width: 438px;
     margin: 0;
     padding: 0;
@@ -542,6 +551,10 @@ img {
     margin-bottom: 33px;
 }
 
+.catalog-item:hover .catalog-depiction {
+    display: flex;
+}
+
 .catalog-item-image {
     width: 358px;
     height: 576px;
@@ -572,7 +585,7 @@ img {
 }
 
 .catalog-depiction {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     min-height: 231px;
