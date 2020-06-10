@@ -210,7 +210,6 @@ img {
 
 .main-header {
     display: flex;
-    flex-direction: row;
     justify-content: space-around; 
     font-size: 16px;
     line-height: 30px;
@@ -220,12 +219,12 @@ img {
 }
 
 .main-header-logo {
-    width: 159.87px;
-    height: 65.02px;   
+    width: 160px;
+    height: 65px;   
 }
 
 .container {
-    width: 1440px;
+    width: 1160px;
     margin: 0 auto;
     padding: 0 10px;    
 }
@@ -245,9 +244,7 @@ img {
     max-width: 115px;
 }
 
-.cart .cart-img {
-    padding-left: 25px;
-}
+
 
 /* User navigation */
 
@@ -278,9 +275,7 @@ img {
 /* advantages style */
 
 .advantages {
-    margin: 0;
     margin-bottom: 80px;
-    padding: 0;
     background-color: var(--grey-1);
 }
 
@@ -297,13 +292,6 @@ img {
 
 /* products style */ 
 
-.products {
-
-}
-
-.product {
- 
-}
 
 .product p {
     max-width: 260px;
@@ -402,8 +390,8 @@ img {
 
 .footer {
     margin-top: 69px;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+    display: flex;
+    justify-content: space-between;
 }
 
 
@@ -411,8 +399,8 @@ img {
 /* social style */
 
 .social-list {
-    margin: 0 auto;
-    width: 320px;
+    margin: 0;
+    width: 261px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 9px;
@@ -422,7 +410,8 @@ img {
 /* attraction style */
 
 .attractions {
-
+    width: 660px;
+    margin-right: 139px;
 }
 
 .attraction {
@@ -447,6 +436,7 @@ img {
 .page-catalog {
     display: grid;
     grid-template-columns: 260px 1fr;
+    gap: 140px;
     align-content: start;
 }
 
@@ -535,9 +525,7 @@ img {
     color: var(--black-1);
 }
 
-.catalog {
-    margin-left: 140px;
-}
+
 
 .catalog-list {
     display: flex;
