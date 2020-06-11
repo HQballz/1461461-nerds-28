@@ -212,6 +212,7 @@ img {
     display: flex;
     justify-content: space-around; 
     align-items: center;
+    flex-wrap: wrap;
     font-size: 16px;
     line-height: 30px;
     font-weight: var(--font-medium);
@@ -220,6 +221,7 @@ img {
 }
 
 .main-header-logo {
+    margin-top: 49px;
     width: 160px;
     height: 65px;   
 }
@@ -231,7 +233,19 @@ img {
 }
 
 .main-navigation-wrapper {
+    margin-top: 75px;
     width: 100%; 
+}
+
+.main-header-index {
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.main-header-catalog {
+    width: 100%;
+    padding-bottom: 108px;
+    margin-bottom: 55px;
 }
 
 .site-navigation {
@@ -244,6 +258,7 @@ img {
 }
 
 .cart {
+    margin-top: 75px;
     max-width: 115px;
 }
 
@@ -277,8 +292,9 @@ img {
 
 /* advantages style */
 
+
 .advantages {
-    margin-bottom: 80px;
+
     background-color: var(--grey-1);
 }
 
@@ -297,11 +313,13 @@ img {
 
 
 .products-list p {
+    margin: 0;
     max-width: 260px;
     margin-bottom: 32px;
 }
 
 .products-list {
+    width: 1100px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 100px;
@@ -316,6 +334,7 @@ img {
 
 .products-list h3 {
     margin: 0;
+    margin-bottom: 16px;
     font-size: 24px;
     line-height: 30px;
     font-weight: var(--font-bold);
@@ -380,6 +399,10 @@ img {
 
 /* pipup style */
 
+.adress {
+    grid-column: 1 / -1;
+}
+
 .address-title {
     font-size: 18px;
     line-height: 30px;
@@ -390,6 +413,10 @@ img {
 .address-direction {
     line-height: 18px;
     color: var(--grey-3);
+}
+
+.form {
+    display: none;
 }
 
 .button-adress {
@@ -457,10 +484,10 @@ img {
 /* title style */
 
 .page-title {
+    width: 100%;
     margin: 0;
-    margin-bottom: 55px;
+    margin-top: 72px;
     padding: 0;
-    grid-column: 1 / -1;
     text-align: center;
     background-color: var(--grey-1);     
 }
