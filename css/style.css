@@ -218,10 +218,17 @@ img {
     font-weight: var(--font-medium);
     color: var(--black-1);  
     background-color: var(--grey-1);
+} 
+
+.main-header-navigation {
+    width: 100%;
+    margin-top: 49px;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;    
 }
 
 .main-header-logo {
-    margin-top: 49px;
     width: 160px;
     height: 65px;   
 }
@@ -233,7 +240,6 @@ img {
 }
 
 .main-navigation-wrapper {
-    margin-top: 75px;
     width: 100%; 
 }
 
@@ -258,7 +264,6 @@ img {
 }
 
 .cart {
-    margin-top: 75px;
     max-width: 115px;
 }
 
@@ -294,7 +299,7 @@ img {
 
 
 .advantages {
-
+    
     background-color: var(--grey-1);
 }
 
@@ -328,7 +333,7 @@ img {
     list-style: none;
 }
 
-.products-list img {
+.img {
     margin-bottom: 25px;
 }
 
@@ -339,12 +344,6 @@ img {
     line-height: 30px;
     font-weight: var(--font-bold);
     text-transform: uppercase;    
-}
-
-.products-list li {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between
 }
 
 .line {
@@ -571,22 +570,22 @@ img {
 
 
 .catalog-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;  
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 37px;
+    grid-row-gap: 33px;
     padding: 0;
     margin: 0;
-    margin-bottom: 55px;
 }
 
 .catalog-item {
     width: 358px;
     min-height: 620px;
-    margin-bottom: 33px;
 }
 
 .catalog-item:hover .catalog-depiction {
     display: flex;
+    position: relative;
 }
 
 .catalog-item-image {
