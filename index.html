@@ -39,39 +39,57 @@
 
       <section class="advantages">
         <div>
-          <div class="smarts">
-            <h3 class="title">Долго, дорого, скрупулезно.</h3>
-            <p class="advantages-desc">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
-            <a href="#" class="button button-advantages button-red">Узнать больше</a>
-            <img src="img/slide_smarts.jpg" alt="смартфоны" width="760" height="431"> 
+          <div class="advantages-rules advantages-smarts">
+            <div class="advantages-depiction">
+              <h3 class="title">Долго, дорого, скрупулезно.</h3>
+              <p class="advantages-desc">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+              <a href="#" class="button button-advantages button-red">Узнать больше</a>              
+            </div>
+
+            <div class="advantages-image-smarts">
+              
+            </div>
           </div>
 
-          <div class="visually-hidden desc">
-            <h3 class="title">Любим математику как никто другой</h3>
-            <p class="advantages-desc">Никакого креатива, только математические формулы<br> для расчета идеальных пропорций</p>
-            <a href="#" class="button button-advantages button-red">Узнать больше</a>
-            <img src="img/slide-desc.jpg" alt="десктопы" width="760" height="431"> 
+
+          <div class="advantages-rules visually-hidden advantages-desctop">
+            <div class="advantages-depiction">
+              <h3 class="title">Любим математику как никто другой</h3>
+              <p class="advantages-desc">Никакого креатива, только математические формулы<br> для расчета идеальных пропорций</p>
+              <a href="#" class="button button-advantages button-red">Узнать больше</a>
+            </div>
+
+            <div class="advantages-image-desctop">
+              
+            </div>
           </div>
 
-          <div class="visually-hidden tablet">
-            <h3 class="title">Только ночь, только хардкор</h3>
-            <p class="advantages-desc">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-            <a href="#" class="button button-advantages button-red">Узнать больше</a>
-            <img src="img/slide-tablet.jpg" alt="планшеты" width="760" height="431"> 
+
+          <div class="advantages-rules visually-hidden advantages-tablet">
+            <div class="advantages-depiction">
+              <h3 class="title">Только ночь, только хардкор</h3>
+              <p class="advantages-desc">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+              <a href="#" class="button button-advantages button-red">Узнать больше</a>              
+            </div>
+
+            <div class="advantages-image-tablet">
+             
+            </div>
           </div>
         </div>
 
-        <div>
+        <div class="sliders">
           <button type="button">.</button>
           <button type="button">.</button>
           <button type="button">.</button>          
         </div>
-      </section>      
+      </section> 
+           
     </header>
 
     <main class="container">
 
-      <section>
+      <section class="products">
         <ul class="products-list">
           <li>
             <img src="img/web-sites.jpg" width="300" height="146" alt="Веб-сайты" class="img">
@@ -96,22 +114,27 @@
       </section>
       
       <section class="activity">
-        <div class="activity-desc">
-          <p class="activity-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
-          <p class="activity-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br> превыше креатива. Работаем не покладая рук, как роботы.</p>        
+        <div class="activity-left">
+          <div class="activity-desc">
+            <p class="activity-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
+            <p class="activity-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>        
+          </div>
+          <div class="activity-options">
+            <p class="options-title"><strong>Выполняем заказы на разработку:</strong></p>
+            <ul class="options-list">
+              <li class="option">Веб-сайтов любой сложности</li>
+              <li class="option">Мобильных приложений для iOS и Android</li>
+              <li class="option">Слайдшоу и видео для корпоративных презентаций</li>
+            </ul>
+          </div>          
         </div>
-        <div class="activity-options">
-          <p class="options-title"><strong>Выполняем заказы на разработку:</strong></p>
-          <ul class="options-list">
-            <li>Веб-сайтов любой сложности</li>
-            <li>Мобильных приложений для iOS и Android</li>
-            <li>Слайдшоу и видео для корпоративных презентаций</li>
-          </ul>
-        </div>
+
+
+        
         <div class="benefit">
-          <img src="img/logo-main.png" alt="logo-main">
+          <img src="img/logo-main.png" alt="logo-main" class="logo-main">
           <p class="benefit-title"><strong>с 2004 года Любим точность во всем:</strong></p>
-          <ul class="benefit-list">
+          <ul class="benefit-list list">
             <li>
               <span class="benefit-percents">146<sup>%</sup></span><span class="benefit-value">Уровень самоотдачи</span>
             </li>
@@ -126,29 +149,33 @@
       </section>
 
       <section class="partners">
-        <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/htmlacademy.svg" alt="htmlacademy">
-        </a>
-        <a href="#">
-          <img src="img/borodinski.svg" alt="borodinski">
-        </a>
-        <a href="#">
-          <img src="img/pink.svg" alt="pink">
-        </a>
-        <a href="#">
-          <img src="img/mishka.svg" alt="mishka">
-        </a>
+        <hr class="line partners-line-top">
+        <div class="partners-list">
+          <a href="https://htmlacademy.ru/intensive/htmlcss" class="line-vertical line-vertical-1">
+            <img src="img/htmlacademy.svg" alt="htmlacademy">
+          </a>
+          <a href="#" class="line-vertical line-vertical-2">
+            <img src="img/borodinski.svg" alt="borodinski">
+          </a>
+          <a href="#" class="line-vertical line-vertical-3">
+            <img src="img/pink.svg" alt="pink">
+          </a>
+          <a href="#">
+            <img src="img/mishka.svg" alt="mishka">
+          </a>          
+        </div>
+        <hr class="line">
       </section>
 
       <section class="address">
-        <div>
-          <p class="address-title"><strong>nёrds design studio</strong></p>
-          <p class="address-direction">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          <a href="tel:+78122757575" class="address-direction">тел. +7 (812) 275-75-75</a>
-          <button type="submit" class="button button-adress button-red">Напишите нам</button>
-        </div>
         <img src="img/map.png" width="1440" height="416" alt="Студия Nerds находится по адресу Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
-        <img src="img/map-marker.png" width="231" height="190" alt="marker">
+        <img src="img/map-marker.png" width="231" height="190" alt="marker" class="marker">
+        <div class="address-depiction">
+          <p class="address-title"><strong>nёrds design studio</strong></p>
+          <p class="address-direction address-direction-text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <a href="tel:+78122757575" class="address-direction address-direction-phone">тел. +7 (812) 275-75-75</a>
+          <button type="submit" class="button button-address button-red">Напишите нам</button>
+        </div>        
       </section>
 
       <section class="form">

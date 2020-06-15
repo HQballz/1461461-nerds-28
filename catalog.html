@@ -115,25 +115,28 @@
         </section>
         
         <section class="catalog">
-            <div>
-                <ul class="list sorting-list">
-                    <li class="legend">
-                        <strong>Сортировать:</strong>
-                    </li>
-                    <li>
-                        <a href="#" class="sorting">По цене</a>
-                    </li>
-                    <li>
-                        <a href="#" class="sorting">По типу</a>
-                    </li>
-                    <li>
-                        <a href="#" class="sorting">По названию</a>
-                    </li>
-                    <li>
-                        <a href="#" aria-label="Сортировка по убыванию" class="sorting">↑</a>
-                        <a href="#" aria-label="Сортировка по возрастанию" class="sorting">↓</a>
-                    </li>
-                </ul>
+            <div class="sorting-list">
+                <div>
+                        <strong class="legend">Сортировать:</strong>                       
+                </div>
+                
+                <div>
+                    <ul class="list sorting-list-type">
+                        <li>
+                            <a href="#" class="sorting">По цене</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sorting">По типу</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sorting">По названию</a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="Сортировка по убыванию" class="sorting">↑</a>
+                            <a href="#" aria-label="Сортировка по возрастанию" class="sorting">↓</a>
+                        </li> 
+                    </ul>                                               
+                </div>
             </div>
 
                 <ul class="list catalog-list">
@@ -225,7 +228,7 @@
 
 
             <div class="pagination">
-                <ul class="list">
+                <ul class="list pagination-list">
                     <li>
                         <a href="#" class="button button-number button-grey">1</a>
                     </li>
@@ -242,15 +245,15 @@
             </div>
         </section>
 
-        <section class="adress">
-            <div>
-                <p class="address-title"><strong>nёrds design studio</strong></p>
-                <p class="address-direction">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-                <a href="tel:+78122757575" class="address-direction">тел. +7 (812) 275-75-75</a>
-                <button type="submit" class="button button-adress button-red">Напишите нам</button>
-            </div>
+        <section class="address">
             <img src="img/map.png" width="1440" height="416" alt="Студия Nerds находится по адресу Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
-            <img src="img/map-marker.png" width="231" height="190" alt="marker">
+            <img src="img/map-marker.png" width="231" height="190" alt="marker" class="marker">
+            <div class="address-depiction">
+                <p class="address-title"><strong>nёrds design studio</strong></p>
+                <p class="address-direction address-direction-text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+                <a href="tel:+78122757575" class="address-direction address-direction-phone">тел. +7 (812) 275-75-75</a>
+                <button type="submit" class="button button-address button-red">Напишите нам</button>
+            </div>        
         </section>
 
         <section class="form">
