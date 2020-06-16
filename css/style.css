@@ -218,9 +218,8 @@ img {
 
 .main-header {
     display: flex;
-    justify-content: space-around; 
+    flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
     font-size: 16px;
     line-height: 30px;
     font-weight: var(--font-medium);
@@ -431,7 +430,7 @@ img {
     margin-bottom: 25px;
 }
 
-..option:last-child {
+.option:last-child {
     margin-bottom: 0;
 }
 
@@ -482,8 +481,9 @@ img {
 }
 
 .partners-list {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
     margin-bottom: 44px;
 }
 
@@ -492,36 +492,42 @@ img {
 }
 
 .line-vertical-1 {
+    width: 199px;
     padding-right: 48px;
 }
 
 .line-vertical-2 {
+    width: 209px;
     padding-right: 44px;
 }
 
 .line-vertical-3 {
+    width: 185px;
     padding-right: 55px;
 }
+
+
 
 /* partners stle end (in developing)*/
 
 /* pipup style */
 
 .address {
-    width: 1440px;
+    position: relative;
+    width: 100%;
     margin: 0;
     padding: 0;    
 }
 
 .marker {
     position: absolute;
-    top: 1929px;
+    bottom: 140px;
     left: 822px;
 }
 
 .address-depiction {
     position: absolute;
-    top: 1897px;
+    bottom: 54px;
     left: 140px;
     display: flex;
     flex-direction: column;
