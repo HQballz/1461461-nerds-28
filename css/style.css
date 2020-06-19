@@ -592,16 +592,18 @@ img {
 
 .attractions {
     width: 660px;
-    margin-right: 139px;
+    margin-bottom: 68px;
 }
 
 .attraction {
     font-size: 36px;
+    margin: 0;
     margin-bottom: 10px;
     font-weight: var(--font-bold);
 }
 
 .attraction-desc {
+    margin: 0;
     color: var(--black-3);
 }
 
