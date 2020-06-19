@@ -126,6 +126,7 @@ img {
     text-transform: uppercase;
     border: none;
     border-radius: 3px;
+    cursor: pointer;
 }
 
 .button:active {
@@ -310,19 +311,19 @@ img {
 .advantages-image-smarts {
     width: 760px;
     height: 431px;
-    background-image: url(../img/slide_smarts.jpg);
+    background-image: url(../img/slide_smarts.png);
 }
 
 .advantages-image-desctop {
     width: 760px;
     height: 431px;
-    background-image: url(../img/slide-desc.jpg);
+    background-image: url(../img/slide-desc.png);
 }
 
 .advantages-image-tablet {
     width: 760px;
     height: 431px;
-    background-image: url(../img/slide-tablet.jpg);
+    background-image: url(../img/slide-tablet.png);
 }
 
 
@@ -524,10 +525,7 @@ img {
     display: flex;
     flex-direction: column;
     width: 230px;
-    padding-top: 49px;
-    padding-left: 39px;
-    padding-bottom: 47px;
-    padding-right: 50px;
+    padding: 49px 39px 47px 50px;
     background-color: var(--white);
 }
 
@@ -621,6 +619,7 @@ img {
     grid-template-columns: 260px 1fr;
     gap: 140px;
     align-content: start;
+    margin-bottom: 60px;
 }
 
 /* title style */
@@ -748,8 +747,6 @@ img {
 
 .catalog-item:hover .catalog-depiction {
     display: flex;
-    position: absolute;
-    bottom: 44px;
 }
 
 .catalog-item-image {
@@ -774,7 +771,7 @@ img {
     color: var(--black-1-transparent-2lvl);
 }
 
-.catalog-description {
+.catalog-text {
     text-align: center;
     font-size: 16px;
     line-height: 18px;
@@ -782,6 +779,8 @@ img {
 }
 
 .catalog-depiction {
+    position: absolute;
+    bottom: 44px;
     display: none;
     flex-direction: column;
     align-items: center;
@@ -801,7 +800,6 @@ img {
     width: 443px;
     padding: 0;
     margin: 0;
-    margin-bottom: 60px;
 }
 
 .button-number {
