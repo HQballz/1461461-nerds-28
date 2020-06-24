@@ -112,6 +112,8 @@ img {
 
 .list {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -277,12 +279,24 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation {
+    position: relative;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     width: 438px;
     margin: auto;
     padding: 0;
+}
+
+.site-navigation-catalog::after {
+    content: "";
+
+    position: absolute;
+    top: 43px;
+    left: 232px;
+    width: 74px;
+    height: 2px;
+    border-bottom: 2px solid var(--basic-red);
 }
 
 .cart {
@@ -292,10 +306,10 @@ input[type="radio"].visually-hidden {
 
 .cart::before {
     content: "";
+
     position: absolute;
     top: 7px;
     left: 0px;
-
     width: 15px;
     height: 15px;
     background-image: url(../img/cart-icon.svg);
@@ -331,11 +345,15 @@ input[type="radio"].visually-hidden {
 
 /* advantages style */
 
+.advantages {
+    position: relative;
+}
 
 .advantages-rules {
     width: 1160px;
     display: flex;
     justify-content: space-between;
+    padding: 0;
     background-color: var(--grey-1);
 }
 
@@ -375,8 +393,8 @@ input[type="radio"].visually-hidden {
 
 .sliders {
     position: absolute;
-    top: 431px;
-    left: 676px;
+    top: 317px;
+    left: 536px;
     display: flex;
     justify-content: space-between;
     min-width: 88px;
@@ -626,6 +644,7 @@ input[type="radio"].visually-hidden {
     height: 590px;
     transform: translate(-50%, -50%);
     z-index: 4;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
 }
 
 .form {
@@ -634,8 +653,6 @@ input[type="radio"].visually-hidden {
     justify-content: space-between;
     padding: 73px 100px 84px;
     background-color: var(--white);
-
-    outline: 5px solid #ff0000;
 }
 
 .form-title {
@@ -652,8 +669,6 @@ input[type="radio"].visually-hidden {
     margin: 0;
     margin-bottom: 34px;
     padding: 0;
-
-    outline: 5px solid #ff0000;
 }
 
 .form-textarea {
@@ -675,7 +690,13 @@ input {
     box-sizing: border-box;
     border-radius: 3px;
     padding: 0;
+    padding-top: 16px;
+    padding-left: 16px;
     margin: 0;
+}
+
+.form-item input {
+    padding: 16px 190px 16px 16px;
 }
 
 .form-item input:hover {
@@ -877,6 +898,9 @@ input {
 
 .form-range-input {
     width: 80px;
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+    margin: 0;
 }
 
 .legend {
@@ -919,7 +943,7 @@ input {
     border-radius: 50%;
     background-color: var(--grey-7);
     box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.15);
-    cursor: pointer;
+    cursor: grab;
 }
 
 .toggle-min {
@@ -982,6 +1006,14 @@ input {
     opacity: 0.4;
 }
 
+.filter-input-radio:hover + label::before {
+    opacity: 1;
+}
+
+.filter-input-radio:focus + label::before {
+    opacity: 1;
+}
+
 .filter-input-radio:checked + label::after {
     content: "";
     position: absolute;
@@ -992,6 +1024,14 @@ input {
     background-color: var(--dark-grey-3);
     border-radius: 50%;
     opacity: 0.4;
+}
+
+.filter-input-radio:hover + label::after {
+    opacity: 1;
+}
+
+.filter-input-radio:focus + label::after {
+    opacity: 1;
 }
 
 
@@ -1008,6 +1048,14 @@ input {
     opacity: 0.4;
 }
 
+.filter-input-checkbox:hover + label::before {
+    opacity: 1;
+}
+
+.filter-input-checkbox:focus + label::before {
+    opacity: 1;    
+}
+
 .filter-input-checkbox:checked + label::after {
     content: "";
     position: absolute;
@@ -1017,6 +1065,15 @@ input {
     height: 20px;
     background-image: url(../img/shape.svg);
     background-repeat: no-repeat;
+    opacity: 0.4;
+}
+
+.filter-input-checkbox:hover + label::after {
+    opacity: 1;
+}
+
+.filter-input-checkbox:focus + label::after {
+    opacity: 1;
 }
 
 
@@ -1044,13 +1101,14 @@ input {
 .sorting-list {
     display: flex;
     justify-content: space-between;
+    width: 672px;
 }
 
 .sorting-list-type {
     position: relative;
     display: flex;
     justify-content: space-around;
-    width: 359px;
+    width: 272px;
     margin: 0;
     margin-bottom: 44px;
 }
@@ -1060,7 +1118,7 @@ input {
 
     position: absolute;
 
-    left: 375px;
+    left: 319px;
     top: 8px; 
     border: 4px solid transparent; 
     border-top: 8px solid var(--black-1-transparent-2lvl); 
@@ -1071,29 +1129,25 @@ input {
 
     position: absolute;
 
-    left: 393px;
+    left: 348px;
     top: 4px; 
     border: 4px solid transparent; 
     border-bottom: 8px solid var(--black-1-transparent-2lvl);  
 }
 
 .sorting-arrow-down:hover {
-    border: 4px solid transparent; 
     border-top: 8px solid var(--black-1-transparent-1lvl); 
 }
 
-.sorting-arrow-up:hover {
-    border: 4px solid transparent; 
+.sorting-arrow-up:hover { 
     border-bottom: 8px solid var(--black-1-transparent-1lvl);
 }
 
 .sorting-arrow-down:active {
-    border: 4px solid transparent; 
     border-top: 8px solid var(--black-1); 
 }
 
 .sorting-arrow-up:active {
-    border: 4px solid transparent; 
     border-bottom: 8px solid var(--black-1);
 }
 
@@ -1104,12 +1158,65 @@ input {
     grid-row-gap: 31px;
     padding: 0;
     margin: 0;
+    margin-bottom: 55px;
 }
 
 .catalog-item {
     position: relative;
     width: 358px;
     min-height: 620px;
+    opacity: 1;
+}
+
+.catalog-rectangle {
+    width: 100%;
+    height: 40px;
+    background-color: var(--dark-grey-3);
+    border-radius: 4px;
+    opacity: 0.1;
+}
+
+.catalog-rectangle:hover {
+    opacity: 1;
+}
+
+.catalog-rectangle:focus {
+    opacity: 1;
+}
+
+.circle {
+    display: block;
+    position: absolute;
+    left: 32px;
+    top: 13px;
+    width: 14px;
+    height: 14px;
+    background-color: var(--white);
+    border-radius: 50%;
+}
+
+.circle::before {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 21px;
+    top: 0;
+    width: 14px;
+    height: 14px;
+    background-color: var(--white);
+    border-radius: 50%;
+}
+
+.circle::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 21px;
+    top: 0;
+    width: 14px;
+    height: 14px;
+    background-color: var(--white);
+    border-radius: 50%;
 }
 
 .catalog-item-card:hover {
@@ -1151,11 +1258,11 @@ input {
 
 .catalog-depiction {
     position: absolute;
-    bottom: 44px;
+    bottom: 0;
     display: none;
     flex-direction: column;
     align-items: center;
-    min-width: 360px;
+    width: 100%;
     min-height: 231px;
     background-color: var(--grey-1);
 }
