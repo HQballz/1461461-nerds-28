@@ -386,6 +386,11 @@ input[type="radio"].visually-hidden {
     background-image: url(../img/slide-tablet.png);
 }
 
+.current {
+    border: 2px solid var(--grey-4);
+    box-sizing: border-box;
+}
+
 .sliders {
     position: absolute;
     top: 317px;
@@ -399,14 +404,6 @@ input[type="radio"].visually-hidden {
     cursor: pointer;
 }
 
-.current {
-    border: 2px solid var(--grey-4);
-    box-sizing: border-box;
-}
-
-
-
-/* ТРЕБУЕТСЯ ДОРАБОТКА !!!( У ссылки не присваивается белый цвет текста) */
 
 .button-advantages {
     padding: 17px 54px 15px;  
