@@ -1095,11 +1095,11 @@ input[type="radio"].visually-hidden {
     opacity: 1;
 }
 
-.filter-option input:disabled + label::before {
+.filter-input:disabled + label::before {
     opacity: 0.1;
 }
 
-.filter-option input:disabled + .label {
+.filter-input:disabled + .label {
     opacity: 0.3;
 }
 
