@@ -215,17 +215,18 @@ input[type="radio"].visually-hidden {
     color: var(--black-1-transparent-4lvl);
 }
 
-.button-white {
-    border: 3px solid var(--grey-9);
-    background-color: var(--white);
-}
-
 .button-slider {
     background-color: var(--white);
     width: 18px;
     height: 18px;
     border: 0;
     border-radius: 50%;
+}
+
+.button-white {
+    border: 3px solid var(--grey-9);
+    border-radius: 3px;
+    background-color: var(--white);
 }
 
 .title {
@@ -393,7 +394,18 @@ input[type="radio"].visually-hidden {
 }
 
 .current {
+    position: relative;
+}
+
+.current::before {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    width: 8px;
+    height: 8px;
     border: 2px solid var(--grey-4);
+    border-radius: 50%;
     box-sizing: border-box;
 }
 
@@ -537,6 +549,11 @@ input[type="radio"].visually-hidden {
     font-size: 45px;
     line-height: 64px;
     font-weight: var(--font-bold);    
+}
+
+.persent {
+    font-size: 26px;
+    line-height: 40px;
 }
 
 .benefit-value {
@@ -1002,7 +1019,8 @@ input[type="radio"].visually-hidden {
 
 .form-range-fields input {
     width: 80px;
-    padding: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     margin-left: 10px;
     text-align: center;
     color: var(--black-2);
