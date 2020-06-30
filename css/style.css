@@ -278,6 +278,7 @@ input[type="radio"].visually-hidden {
 
 .main-navigation-wrapper {
     margin-top: 19px;
+    margin-right: 42px;
     width: 438px; 
 }
 
@@ -466,12 +467,12 @@ input[type="radio"].visually-hidden {
 }
 
 .img {
-    margin-bottom: 25px;
+    margin-bottom: 23px;
 }
 
 .products-list h3 {
     margin: 0;
-    margin-bottom: 16px;
+    margin-bottom: 18px;
     font-size: 24px;
     font-weight: var(--font-bold);
     text-transform: uppercase;    
@@ -495,7 +496,7 @@ input[type="radio"].visually-hidden {
 
 .activity-title {
     margin: 0;
-    margin-bottom: 32px;
+    margin-bottom: 34px;
     font-size: 45px;
     line-height: 45px;
     font-weight: var(--font-medium);
@@ -518,19 +519,20 @@ input[type="radio"].visually-hidden {
 .options-list {
     line-height: 24px;
     margin: 0;
+    padding-left: 36px;
     color: var(--black-2);
 }
 
 .option {
     position: relative;
-    margin-bottom: 25px;
+    margin-bottom: 24px;
 }
 
 .option::before {
     content: "";
     position: absolute;
-    top: 9px;
-    left: -40px;
+    top: 10px;
+    left: -36px;
     width: 25px;
     height: 2px;
     border-bottom: 2px solid var(--basic-red);
@@ -541,7 +543,7 @@ input[type="radio"].visually-hidden {
 }
 
 .logo-main {
-    margin-bottom: 37px;
+    margin-bottom: 30px;
 }
 
 .benefit {
@@ -556,9 +558,13 @@ input[type="radio"].visually-hidden {
     padding: 0;
 }
 
+.benefit-list li {
+    padding-right: 23px;
+}
+
 .benefit-title {
     margin: 0;
-    margin-bottom: 31px;
+    margin-bottom: 50px;
     text-transform: uppercase;
     text-align: center;
     font-weight: var(--font-bold);
@@ -566,7 +572,7 @@ input[type="radio"].visually-hidden {
 
 .benefit-percents {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 17px;
     font-size: 45px;
     line-height: 24px;
     font-weight: var(--font-bold);    
@@ -938,7 +944,7 @@ input[type="radio"].visually-hidden {
     grid-template-columns: 260px 1fr;
     gap: 140px;
     align-content: start;
-    margin-bottom: 60px;
+    margin-bottom: 57px;
 }
 
 /* title style */
@@ -1269,7 +1275,7 @@ fieldset .legend {
     grid-row-gap: 31px;
     padding: 0;
     margin: 0;
-    margin-bottom: 48px;
+    margin-bottom: 50px;
 }
 
 .catalog-item {
