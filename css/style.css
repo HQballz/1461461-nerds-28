@@ -862,7 +862,7 @@ input[type="radio"].visually-hidden {
 
 .social-list {
     margin: 0;
-    margin-top: 6px;
+    margin-top: 5px;
     margin-left: 2px;
     width: 261px;
     display: grid;
@@ -1094,7 +1094,7 @@ fieldset .legend {
 
 .filter-option {
     margin-bottom: 22px;
-    padding-left: 34px;
+    padding-left: 36px;
 }
 
 .filter-option:last-child {
@@ -1109,7 +1109,7 @@ fieldset .legend {
 }
 
 .filter-radio {
-    margin-bottom: 46px;
+    margin-bottom: 44px;
 }
 
 .filter-radio .legend {
@@ -1154,11 +1154,11 @@ fieldset .legend {
 }
 
 .filter-checkbox {
-    margin-bottom: 50px;
+    margin-bottom: 51px;
 }
 
 .filter-checkbox .legend {
-    margin-bottom: 16px;
+    margin-bottom: 17px;
 }
 
 
