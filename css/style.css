@@ -234,7 +234,7 @@ input[type="radio"].visually-hidden {
     line-height: 55px;
     font-weight: var(--font-medium);   
     margin: 0; 
-    margin-bottom: 29px;
+    margin-bottom: 28px;
 }
 
 
@@ -277,8 +277,8 @@ input[type="radio"].visually-hidden {
 }
 
 .main-navigation-wrapper {
-    margin-top: 19px;
-    margin-right: 42px;
+    margin-top: 16px;
+    margin-right: 44px;
     width: 438px; 
 }
 
@@ -306,7 +306,7 @@ input[type="radio"].visually-hidden {
 .active-link {
     width: 74px;
     height: 2px;
-    padding-bottom: 13px;
+    padding-bottom: 18px;
     border-bottom: 2px solid var(--basic-red);
 }
 
@@ -467,7 +467,7 @@ input[type="radio"].visually-hidden {
 }
 
 .img {
-    margin-bottom: 23px;
+    margin-bottom: 22px;
 }
 
 .products-list h3 {
@@ -484,7 +484,7 @@ input[type="radio"].visually-hidden {
 .activity {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 73px;
+    padding-bottom: 74px;
     margin-bottom: 46px;
     border-bottom: var(--basic-line);
 }
@@ -558,8 +558,12 @@ input[type="radio"].visually-hidden {
     padding: 0;
 }
 
-.benefit-list li {
+.benefit-list-item {
     padding-right: 23px;
+}
+
+.benefit-list li:last-child {
+    padding: 0;
 }
 
 .benefit-title {
@@ -602,7 +606,7 @@ input[type="radio"].visually-hidden {
     grid-template-columns: 281px 300px 300px 279px;
     justify-items: center;
     align-items: center;
-    margin-bottom: 44px;
+    margin-bottom: 38px;
 }
 
 .partners-img {
@@ -673,19 +677,19 @@ input[type="radio"].visually-hidden {
 
 .marker {
     position: absolute;
-    bottom: 152px;
+    bottom: 147px;
     left: 822px;
     z-index: 2;
 }
 
 .address-depiction {
     position: absolute;
-    bottom: 70px;
+    bottom: 65px;
     left: 140px;
     display: flex;
     flex-direction: column;
     width: 230px;
-    padding: 49px 39px 47px 50px;
+    padding: 50px 40px 44px 50px;
     background-color: var(--white);
     z-index: 3;
 }
@@ -709,7 +713,7 @@ input[type="radio"].visually-hidden {
 }
 
 .address-direction-phone {
-    margin-bottom: 37px;
+    margin-bottom: 39px;
 }
 
 .form-window {
@@ -847,6 +851,7 @@ input[type="radio"].visually-hidden {
 .footer {
     position: relative;
     margin-top: 56px;
+    margin-bottom: 68px;
     display: flex;
     justify-content: space-between;
 }
@@ -857,6 +862,8 @@ input[type="radio"].visually-hidden {
 
 .social-list {
     margin: 0;
+    margin-top: 6px;
+    margin-left: 2px;
     width: 261px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -881,8 +888,8 @@ input[type="radio"].visually-hidden {
 }
 
 .social-icon-vk {
-    width: 26px;
-    height: 15px;
+    width: 23px;
+    height: 13px;
     padding: 33px 28px 33px 27px;
     background-repeat: no-repeat;
     background-image: url("../img/vk-icon.svg");
@@ -890,8 +897,8 @@ input[type="radio"].visually-hidden {
 }  
 
 .social-icon-fb {
-    width: 12px;
-    height: 22px;
+    width: 9px;
+    height: 20px;
     padding: 31px 34px 28px 35px;
     background-repeat: no-repeat;
     background-image: url("../img/fb-icon.svg");
@@ -899,8 +906,8 @@ input[type="radio"].visually-hidden {
 }
 
 .social-icon-inst {
-    width: 21px;
-    height: 21px;
+    width: 18px;
+    height: 19px;
     padding: 30px;
     background-repeat: no-repeat;
     background-image: url("../img/insta-icon.svg");
@@ -914,7 +921,7 @@ input[type="radio"].visually-hidden {
 
 .attractions {
     width: 660px;
-    margin-top: 11px;
+    margin-top: 16px;
     margin-right: 100px;
 }
 
@@ -944,7 +951,7 @@ input[type="radio"].visually-hidden {
     grid-template-columns: 260px 1fr;
     gap: 140px;
     align-content: start;
-    margin-bottom: 57px;
+    margin-bottom: 59px;
 }
 
 /* title style */
@@ -1114,7 +1121,7 @@ fieldset .legend {
     content: "";
 
     position: absolute;
-    left: -35px;
+    left: -33px;
     top: -3px;
     width: 16px;
     height: 16px;
@@ -1132,7 +1139,7 @@ fieldset .legend {
 .filter-input-radio:checked + label::after {
     content: "";
     position: absolute;
-    left: -27.3px;
+    left: -25.3px;
     top: 4.3px;
     width: 9px;
     height: 9px;
@@ -1158,8 +1165,8 @@ fieldset .legend {
 .filter-input-checkbox + label::before {
     content: "";
     position: absolute;
-    left: -34px;
-    top: 0;
+    left: -33px;
+    top: -2px;
     width: 23px;
     height: 23px;
     background-image: url("../img/checkbox-off.svg");
@@ -1169,7 +1176,8 @@ fieldset .legend {
 .filter-input-checkbox:checked + label::before {
     content: "";
     position: absolute;
-    left: -34px;
+    left: -33px;
+    top: -1px;
     width: 23px;
     height: 23px;
     background-image: url("../img/checkbox-on.svg");
@@ -1201,6 +1209,7 @@ fieldset .legend {
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
+    padding-right: ;
 }
 
 .sorting:hover {
@@ -1223,33 +1232,34 @@ fieldset .legend {
 }
 
 .sorting-list-type {
-    position: relative;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 272px;
     margin: 0;
+    margin-left: 266px;
+    padding-top: 2px;
+}
+
+.arrows {
+    position: relative;
 }
 
 .sorting-arrow-down {
     content: "";
-
     position: absolute;
-
-    left: 319px;
-    top: 8px; 
-    border: 4px solid transparent; 
-    border-top: 8px solid var(--black-1-transparent-2lvl); 
+    left: 48px;
+    top: 10px; 
+    border: 5px solid transparent; 
+    border-top: 9px solid var(--black-1-transparent-2lvl); 
 }
 
 .sorting-arrow-up {
     content: "";
-
     position: absolute;
-
-    left: 348px;
-    top: 4px; 
-    border: 4px solid transparent; 
-    border-bottom: 8px solid var(--black-1-transparent-2lvl);  
+    left: 77px;
+    top: 5px; 
+    border: 5px solid transparent; 
+    border-bottom: 9px solid var(--black-1-transparent-2lvl);  
 }
 
 .sorting-arrow-down:hover {
@@ -1275,7 +1285,7 @@ fieldset .legend {
     grid-row-gap: 31px;
     padding: 0;
     margin: 0;
-    margin-bottom: 50px;
+    margin-bottom: 53px;
 }
 
 .catalog-item {
@@ -1402,15 +1412,15 @@ fieldset .legend {
 }
 
 .button-number {
-    padding: 17px 20px 15px;
+    padding: 12px 20px 15px;
 }
 
 .button-number-active {
-    padding: 14px 17px 12px;    
+    padding: 10px 17px 10px;    
 }
 
 .button-next {
-    padding: 17px 77px 15px 78px;
+    padding: 12px 77px 15px 78px;
 }
 
 

@@ -51,17 +51,10 @@
                         <div class="form-block form-range">
                             <div class="form-range-scale">
                                 <div class="scale">
-                                    <div class="bar" style="
-                                        width: 70%;
-                                        margin-left: 0%;
-                                    "></div>
+                                    <div class="bar"></div>
                                 </div>                                 
-                                <div class="toggle toggle-min" tabindex="0" style="
-                                    left: 7%;
-                                "></div>
-                                <div class="toggle toggle-max" tabindex="0" style="
-                                    left: 62%;
-                                "></div>
+                                <div class="toggle toggle-min" tabindex="0"></div>
+                                <div class="toggle toggle-max" tabindex="0"></div>
                             </div>
                             <div class="form-range-fields">
                                 <label class="form-range-label">
@@ -109,7 +102,7 @@
                                 <label for="news" class="label">Новости</label>
                             </li>
                             <li class="filter-option">
-                                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" id="galery" name="galery" value="galery" disabled>                            
+                                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" id="galery" name="galery" value="galery">                            
                                 <label for="galery" class="label">Галерея</label>
                             </li>
                             <li class="filter-option">
@@ -123,9 +116,11 @@
             </section>
             
             <section class="catalog">
-                <div class="sorting-list">
-                    <span class="legend">Сортировать:</span>                       
-                    
+                <div  class="sorting-list">
+                    <div>
+                        <span class="legend">Сортировать:</span>                       
+                    </div>
+    
                     <div>
                         <ul class="list sorting-list-type">
                             <li>
@@ -137,11 +132,12 @@
                             <li>
                                 <a href="#" class="sorting">По названию</a>
                             </li>
-                            <li>
-                                <a href="#" aria-label="Сортировка по убыванию" class="sorting sorting-arrow-down"></a>
-                                <a href="#" aria-label="Сортировка по возрастанию" class="sorting sorting-arrow-up"></a>
-                            </li> 
                         </ul>                                               
+                    </div>
+                    
+                    <div class="arrows">
+                        <a href="#" aria-label="Сортировка по убыванию" class="sorting sorting-arrow-down"></a>
+                        <a href="#" aria-label="Сортировка по возрастанию" class="sorting sorting-arrow-up"></a>
                     </div>
                 </div>
 
