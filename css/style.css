@@ -1179,9 +1179,9 @@ fieldset .legend {
     content: "";
     position: absolute;
     left: -33px;
-    top: -1px;
+    top: -2px;
     width: 26px;
-    height: 26px;
+    height: 23px;
     background-image: url("../img/checkbox-on.svg");
     background-repeat: no-repeat;
     border: none;
@@ -1359,6 +1359,9 @@ fieldset .legend {
     width: 358px;
     height: 576px;
     margin: 0;
+}
+
+.image-catalog {
     border: 1px solid var(--black-1-transparent-4lvl);
     box-sizing: border-box;
     border-radius: 5px;
