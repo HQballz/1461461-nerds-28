@@ -301,6 +301,7 @@ input[type="radio"].visually-hidden {
     margin: auto;
     padding: 0;
     text-transform: uppercase; 
+    font-weight: var(--font-bold);
 }
 
 .active-link {
@@ -315,6 +316,7 @@ input[type="radio"].visually-hidden {
     margin-top: 19px;
     padding-left: 41px;
     text-transform: uppercase; 
+    font-weight: var(--font-bold);
 }
 
 .cart::before {
@@ -1139,8 +1141,8 @@ fieldset .legend {
 .filter-input-radio:checked + label::after {
     content: "";
     position: absolute;
-    left: -25.3px;
-    top: 4.3px;
+    left: -25.5px;
+    top: 4.4px;
     width: 9px;
     height: 9px;
     background-color: var(--dark-grey-3);
@@ -1178,8 +1180,8 @@ fieldset .legend {
     position: absolute;
     left: -33px;
     top: -1px;
-    width: 23px;
-    height: 23px;
+    width: 26px;
+    height: 26px;
     background-image: url("../img/checkbox-on.svg");
     background-repeat: no-repeat;
     border: none;
@@ -1357,6 +1359,9 @@ fieldset .legend {
     width: 358px;
     height: 576px;
     margin: 0;
+    border: 1px solid var(--black-1-transparent-4lvl);
+    box-sizing: border-box;
+    border-radius: 5px;
 }
 
 .catalog-title {
@@ -1391,7 +1396,7 @@ fieldset .legend {
 .catalog-text {
     width: 255px;
     margin: 0;
-    margin-bottom: 35px;
+    margin-bottom: 33px;
     margin-left: 55px;
     font-size: 16px;
     line-height: 18px;
