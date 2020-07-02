@@ -1091,11 +1091,11 @@ fieldset .legend {
 
 .form-button {
     width: 260px;
-    height: 50px;      
+    height: 50px;     
 }
 
 .filter-option {
-    margin-bottom: 22px;
+    margin-bottom: 21px;
     padding-left: 36px;
 }
 
@@ -1123,7 +1123,7 @@ fieldset .legend {
     content: "";
 
     position: absolute;
-    left: -33px;
+    left: -35px;
     top: -3px;
     width: 16px;
     height: 16px;
@@ -1141,7 +1141,7 @@ fieldset .legend {
 .filter-input-radio:checked + label::after {
     content: "";
     position: absolute;
-    left: -25.5px;
+    left: -27.5px;
     top: 4.4px;
     width: 9px;
     height: 9px;
@@ -1156,7 +1156,7 @@ fieldset .legend {
 }
 
 .filter-checkbox {
-    margin-bottom: 51px;
+    margin-bottom: 50px;
 }
 
 .filter-checkbox .legend {
@@ -1167,7 +1167,7 @@ fieldset .legend {
 .filter-input-checkbox + label::before {
     content: "";
     position: absolute;
-    left: -33px;
+    left: -36px;
     top: -2px;
     width: 23px;
     height: 23px;
@@ -1178,7 +1178,7 @@ fieldset .legend {
 .filter-input-checkbox:checked + label::before {
     content: "";
     position: absolute;
-    left: -33px;
+    left: -36px;
     top: -2px;
     width: 26px;
     height: 23px;
@@ -1211,7 +1211,6 @@ fieldset .legend {
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
-    padding-right: ;
 }
 
 .sorting:hover {
@@ -1364,7 +1363,7 @@ fieldset .legend {
 .image-catalog {
     border: 1px solid var(--black-1-transparent-4lvl);
     box-sizing: border-box;
-    border-radius: 5px;
+    border-radius: 0 0 5px 5px;
 }
 
 .catalog-title {
