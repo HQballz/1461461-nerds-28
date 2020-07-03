@@ -382,6 +382,7 @@ input[type="radio"].visually-hidden {
 .advantages-depiction {
     width: 397px;
     margin-top: 78px;
+    padding-bottom: 80px;
 }
 
 .advantages-desc {
@@ -486,7 +487,7 @@ input[type="radio"].visually-hidden {
 .activity {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 74px;
+    padding-bottom: 72px;
     margin-bottom: 46px;
     border-bottom: var(--basic-line);
 }
@@ -608,7 +609,7 @@ input[type="radio"].visually-hidden {
     grid-template-columns: 281px 300px 300px 279px;
     justify-items: center;
     align-items: center;
-    margin-bottom: 38px;
+    margin-bottom: 37px;
 }
 
 .partners-img {
@@ -690,8 +691,8 @@ input[type="radio"].visually-hidden {
     left: 140px;
     display: flex;
     flex-direction: column;
-    width: 230px;
-    padding: 50px 40px 44px 50px;
+    width: 219px;
+    padding: 50px 50px 44px 50px;
     background-color: var(--white);
     z-index: 3;
 }
@@ -718,7 +719,7 @@ input[type="radio"].visually-hidden {
     margin-bottom: 39px;
 }
 
-.form-window {
+.popup-window {
     display: none;
     position: fixed;
     top: 50%;
@@ -731,8 +732,15 @@ input[type="radio"].visually-hidden {
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
 }
 
-.close {
-    display: box;
+.popup-window-show {
+    display: block;
+    animation-name: box;
+    animation-duration: 0.6s;
+}
+
+.popup-window-error {
+    animation-name: shake;
+    animation-duration: 0.6s;
 }
 
 .cross {
@@ -745,6 +753,7 @@ input[type="radio"].visually-hidden {
     background-color: transparent;
     border: none;
     opacity: 0.3;
+    cursor: pointer;
 }
 
 .cross:hover {
@@ -792,18 +801,12 @@ input[type="radio"].visually-hidden {
 
 .form-item textarea,
 .form-item input {
+    margin: 0;
+    padding: 16px;
     color: var(--black-3-transparent-1lvl);
     border: 2px solid var(--grey-5);
     box-sizing: border-box;
     border-radius: 3px;
-    padding: 0;
-    padding-top: 16px;
-    padding-left: 16px;
-    margin: 0;
-}
-
-.form-item input {
-    padding: 16px 190px 16px 16px;
 }
 
 .form-item input:hover {
@@ -841,8 +844,12 @@ input[type="radio"].visually-hidden {
 }
 
 .button-address {
-    width: 219px;
-    height: 50px;
+    padding: 17px 44px 15px;
+    line-height: 18px;
+}
+
+.button-address:visited {
+    color: var(--white);
 }
 
 /* main style end */
@@ -869,7 +876,7 @@ input[type="radio"].visually-hidden {
     width: 261px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 9px;
+    gap: 9px;
 }
 
 .social-icon {
@@ -923,15 +930,16 @@ input[type="radio"].visually-hidden {
 
 .attractions {
     width: 660px;
-    margin-top: 16px;
+    margin-top: 9px;
     margin-right: 100px;
 }
 
 .attraction {
-    font-size: 36px;
     margin: 0;
-    margin-bottom: 16px;
+    margin-bottom: 11px;
     font-weight: var(--font-bold);
+    font-size: 36px;
+    line-height: 36px;
 }
 
 .attraction-desc {
@@ -1091,7 +1099,8 @@ fieldset .legend {
 
 .form-button {
     width: 260px;
-    height: 50px;     
+    height: 50px; 
+    font-weight: var(--font-bold);    
 }
 
 .filter-option {
@@ -1418,11 +1427,17 @@ fieldset .legend {
     margin: 0;
 }
 
+.pagination-list li:last-child {
+    margin: 0;
+}
+
 .button-number {
+    margin-right: 11px;
     padding: 12px 20px 15px;
 }
 
 .button-number-active {
+    margin-right: 11px;
     padding: 10px 17px 10px;    
 }
 
@@ -1433,3 +1448,37 @@ fieldset .legend {
 
 
 /* catalog style end */
+
+
+/* Animations */
+
+@keyframes box {
+    from {
+        left: -100%;
+    }
+    to {
+        left: 50%;
+    }
+}
+
+@keyframes shake {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+  
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+      transform: translateX(-10px);
+    }
+  
+    20%,
+    40%,
+    60%,
+    80% {
+      transform: translateX(10px);
+    }
+  }

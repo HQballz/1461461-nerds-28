@@ -163,21 +163,21 @@
           <p class="address-title">nёrds design studio</p>
           <p class="address-direction address-direction-text">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
           <a href="tel:+78122757575" class="address-direction address-direction-phone">тел. +7 (812) 275-75-75</a>
-          <button type="submit" class="button button-address button-red">Напишите нам</button>
+          <a href="#" class="button button-link button-address button-red">Напишите нам</a>
         </div>
       </section>
 
-      <section class="form-window close">
+      <section class="popup-window">
         <button type="button" class="cross" aria-label="Закрыть"></button>
-        <form action="https://echo.htmlacademy.ru" method="post" class="form">
+        <form action="https://echo.htmlacademy.ru" method="post" class="form popup-form">
           <p class="form-title">Напишите нам</p>
           <p class="form-item">
             <label>Ваше имя:</label> 
-              <input type="text" name="name" placeholder="Имя Фамилия" required>         
+              <input type="text" name="name" placeholder="Имя Фамилия" class="name" required>         
           </p>
           <p class="form-item">
             <label>Ваш email:</label> 
-              <input type="email" name="email" placeholder="email@example.com" required>
+              <input type="email" name="email" placeholder="email@example.com" class="email" required>
           </p>
           <p class="form-item form-textarea">
             <label>Текст письма:</label> 
@@ -208,5 +208,8 @@
         <p class="attraction-desc">Скидка 10% для друзей из социальных сетей.</p>        
       </div>
     </footer>
+    
+    <script src="js/popup.js"></script>
+
   </body>
 </html>
