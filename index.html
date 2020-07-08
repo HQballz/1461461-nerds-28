@@ -37,9 +37,9 @@
         </div>        
       </div>
 
-      <section class="advantages">
-        <ul class="list">
-          <li class="list advantages-rules advantages-smarts slide slide-current">
+      <section class="advantages js-slider">
+        <ul class="list js-slider-track">
+          <li class="list advantages-rules advantages-smarts slide-first slide_current">
               <div class="advantages-depiction">
                 <h3 class="title">Долго, дорого, скрупулезно.</h3>
                 <p class="advantages-desc">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
@@ -50,7 +50,7 @@
           </li>
 
 
-          <li class="list advantages-rules advantages-desctop slide">
+          <li class="list advantages-rules advantages-desctop slide-second">
               <div class="advantages-depiction">
                 <h3 class="title">Любим математику как никто другой</h3>
                 <p class="advantages-desc">Никакого креатива, только математические формулы<br> для расчета идеальных пропорций</p>
@@ -61,7 +61,7 @@
           </li>
 
 
-          <li class="list advantages-rules advantages-tablet slide">
+          <li class="list advantages-rules advantages-tablet slide-third">
               <div class="advantages-depiction">
                 <h3 class="title">Только ночь, только хардкор</h3>
                 <p class="advantages-desc">Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
@@ -73,10 +73,18 @@
         </ul>
 
         <div class="sliders">
-          <button type="button" class="current button-slider" aria-label="Первый слайд"></button>
-          <button type="button" class="button-slider" aria-label="Второй слайд"></button>
-          <button type="button" class="button-slider" aria-label="Третий слайд"></button>          
-        </div>
+          <ul class="list sliders-list js-slider-controls">
+            <li>
+              <button type="button" class="current button-slider slide-first-button" aria-label="Первый слайд"></button>
+            </li>
+            <li>
+              <button type="button" class="button-slider slide-second-button" aria-label="Второй слайд"></button>
+            </li>
+            <li>
+              <button type="button" class="button-slider slide-third-button" aria-label="Третий слайд"></button>  
+            </li>
+          </ul>
+         </div>
       </section> 
            
     </header>
@@ -173,15 +181,15 @@
           <p class="form-title">Напишите нам</p>
           <p class="form-item">
             <label>Ваше имя:</label> 
-              <input type="text" name="name" placeholder="Имя Фамилия" class="name" required>         
+              <input type="text" name="name" placeholder="Имя Фамилия" class="name popup-input" required>         
           </p>
           <p class="form-item">
             <label>Ваш email:</label> 
-              <input type="email" name="email" placeholder="email@example.com" class="email" required>
+              <input type="email" name="email" placeholder="email@example.com" class="email popup-input" required>
           </p>
           <p class="form-item form-textarea">
             <label>Текст письма:</label> 
-              <textarea name="text" cols="30" rows="10" placeholder="В свободной форме"></textarea>    
+              <textarea name="text" cols="30" rows="10" placeholder="В свободной форме" class="textarea popup-input"></textarea>    
           </p>
           <button type="submit" class="button button-form button-red">Отправить</button>
         </form>
@@ -210,6 +218,7 @@
     </footer>
     
     <script src="js/popup.js"></script>
+    <script src="js/slide.js"></script>
 
   </body>
 </html>

@@ -366,16 +366,12 @@ input[type="radio"].visually-hidden {
 
 .advantages-rules {
     width: 1160px;
-    display: flex;
+    display: none;
     justify-content: space-between;
     padding: 0;
 }
 
-.slide {
-    display: none;
-}
-
-.slide-current {
+.slide_current {
     display: flex;
 }
 
@@ -430,6 +426,9 @@ input[type="radio"].visually-hidden {
     position: absolute;
     top: 317px;
     left: 536px;
+}
+
+.sliders-list {
     display: flex;
     justify-content: space-between;
     min-width: 88px;
@@ -799,14 +798,13 @@ input[type="radio"].visually-hidden {
     font-weight: var(--font-bold);
 }
 
-.form-item textarea,
-.form-item input {
+.popup-input{
     margin: 0;
     padding: 16px;
-    color: var(--black-3-transparent-1lvl);
-    border: 2px solid var(--grey-5);
     box-sizing: border-box;
+    border: 2px solid var(--grey-5);
     border-radius: 3px;
+    color: var(--black-3-transparent-1lvl);
 }
 
 .form-item input:hover {
@@ -836,6 +834,11 @@ input[type="radio"].visually-hidden {
     width: 760px;
     height: 118px;
     resize: none;
+}
+
+.popup-error {
+    border-color: var(--more-red);
+    color: var(--more-red);
 }
 
 .button-form {
@@ -1454,10 +1457,10 @@ fieldset .legend {
 
 @keyframes box {
     from {
-        left: -100%;
+        top: -100%;
     }
     to {
-        left: 50%;
+        top: 50%;
     }
 }
 
@@ -1472,13 +1475,13 @@ fieldset .legend {
     50%,
     70%,
     90% {
-      transform: translateX(-10px);
+      transform: translateX(10px);
     }
   
     20%,
     40%,
     60%,
     80% {
-      transform: translateX(10px);
+      transform: translateX(-10px);
     }
-  }
+}
