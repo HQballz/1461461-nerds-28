@@ -33,9 +33,6 @@ document.addEventListener("DOMContentLoaded", function() {
     popupLink.addEventListener('click', function (evt) {
         evt.preventDefault();
         popupWindow.classList.add('popup-window-show');
-        popupName.removeAttribute('required');
-        popupEmail.removeAttribute('required');
-        popupTextarea.removeAttribute('required');
     
         if (storageName) {
             popupName.value = storageName;

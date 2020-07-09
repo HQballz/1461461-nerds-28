@@ -234,7 +234,6 @@ input[type="radio"].visually-hidden {
     line-height: 55px;
     font-weight: var(--font-medium);   
     margin: 0; 
-    margin-bottom: 28px;
 }
 
 
@@ -369,10 +368,18 @@ input[type="radio"].visually-hidden {
     display: none;
     justify-content: space-between;
     padding: 0;
+    background-repeat: no-repeat;
+    background-position: top right; 
 }
 
 .slide_current {
     display: flex;
+}
+
+.advantages-desc {
+    margin: 0;
+    line-height: 24px;
+    color: var(--black-2);
 }
 
 .advantages-depiction-first {
@@ -381,41 +388,53 @@ input[type="radio"].visually-hidden {
     padding-bottom: 80px;
 }
 
+.title-first {
+    margin-bottom: 28px;
+}
+
+.advantages-desc-first {
+    margin-bottom: 38px;
+}
+
 .advantages-depiction-second {
     width: 538px;
-    margin-top: 78px;
+    margin-top: 75px;
     padding-bottom: 80px;
+}
+
+.title-second {
+    margin-bottom: 40px;
+}
+
+.advantages-desc-second {
+    margin-bottom: 28px;
 }
 
 .advantages-depiction-third {
     width: 538px;
-    margin-top: 78px;
+    margin-top: 75px;
     padding-bottom: 80px;
 }
 
-.advantages-desc {
-    margin: 0;
-    margin-bottom: 38px;
-    line-height: 24px;
-    color: var(--black-2);
+.title-third {
+    margin-bottom: 41px;
+}
+
+.advantages-desc-third {
+    margin-bottom: 27px;
 }
 
 .slide-first {
     background-image: url("../img/slide_smarts.png");
-    background-repeat: no-repeat;
-    background-position: top right; 
 }
 
 .slide-second {
     background-image: url("../img/slide-desc.png");
-    background-repeat: no-repeat;
-    background-position: top right; 
+ 
 }
 
 .slide-third {
     background-image: url("../img/slide-tablet.png");
-    background-repeat: no-repeat;
-    background-position: top right; 
 }
 
 .current {
@@ -436,7 +455,7 @@ input[type="radio"].visually-hidden {
 
 .sliders {
     position: absolute;
-    top: 317px;
+    top: 313px;
     left: 536px;
 }
 
