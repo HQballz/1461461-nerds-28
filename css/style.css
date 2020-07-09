@@ -375,8 +375,20 @@ input[type="radio"].visually-hidden {
     display: flex;
 }
 
-.advantages-depiction {
+.advantages-depiction-first {
     width: 397px;
+    margin-top: 78px;
+    padding-bottom: 80px;
+}
+
+.advantages-depiction-second {
+    width: 538px;
+    margin-top: 78px;
+    padding-bottom: 80px;
+}
+
+.advantages-depiction-third {
+    width: 538px;
     margin-top: 78px;
     padding-bottom: 80px;
 }
@@ -388,22 +400,22 @@ input[type="radio"].visually-hidden {
     color: var(--black-2);
 }
 
-.advantages-image-smarts {
-    width: 760px;
-    height: 431px;
+.slide-first {
     background-image: url("../img/slide_smarts.png");
+    background-repeat: no-repeat;
+    background-position: top right; 
 }
 
-.advantages-image-desctop {
-    width: 760px;
-    height: 431px;
+.slide-second {
     background-image: url("../img/slide-desc.png");
+    background-repeat: no-repeat;
+    background-position: top right; 
 }
 
-.advantages-image-tablet {
-    width: 760px;
-    height: 431px;
+.slide-third {
     background-image: url("../img/slide-tablet.png");
+    background-repeat: no-repeat;
+    background-position: top right; 
 }
 
 .current {
@@ -721,11 +733,13 @@ input[type="radio"].visually-hidden {
 .popup-window {
     display: none;
     position: fixed;
-    top: 50%;
-    left: 50%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
     width: 960px;
     height: 590px;
-    transform: translate(-50%, -50%);
     z-index: 4;
     background-color: var(--white);
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
@@ -1457,10 +1471,10 @@ fieldset .legend {
 
 @keyframes box {
     from {
-        top: -100%;
+        top: -2000px;
     }
     to {
-        top: 50%;
+        top: 0;
     }
 }
 
