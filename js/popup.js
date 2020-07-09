@@ -1,15 +1,15 @@
 var popupLink = document.querySelector('.button-address');
 var popupWindow = document.querySelector('.popup-window');
-var popupClosebutton = popupWindow.querySelector('.cross');
+var buttonPopupClose = popupWindow.querySelector('.cross');
 var popupForm = popupWindow.querySelector('.popup-form')
 var popupName = popupWindow.querySelector('.name');
 var popupEmail = popupWindow.querySelector('.email')
 var popupTextarea = popupWindow.querySelector('.textarea')
 
-
 var isStorageSupport = true;
 var storage = '';
 
+popupForm.noValidate = true;
 
 function popupClose() {
     popupWindow.classList.remove('popup-window-show');
@@ -28,41 +28,54 @@ popupLink.addEventListener('click', function (evt) {
     popupWindow.classList.add('popup-window-show');
     popupName.removeAttribute('required');
     popupEmail.removeAttribute('required');
+    popupTextarea.removeAttribute('required');
 
-    if (storage) {
+    if (storageName) {
         popupName.value = storageName;
-    } else {
-        popupEmail.focus();
-    }
-    if (storage) {
-        popupEmail.value = storageEmail;
-    } else {
-        popupTextarea.focus();
-    }
-
-    popupName.focus();
+    } 
+    popupEmail.focus();
 });
 
-popupClosebutton.addEventListener('click', function (evt) {
+buttonPopupClose.addEventListener('click', function (evt) {
     evt.preventDefault();
     popupClose();
 });
 
 popupForm.addEventListener('submit', function (evt) {
-    if (!popupName.value || !popupEmail.value) {
+    if (!popupName.value) {
         evt.preventDefault();
         popupWindow.classList.remove('popup-window-error');
         popupWindow.offsetWidth = popupWindow.offsetWidth;
         popupWindow.classList.add('popup-window-error');
         popupName.classList.add('popup-error');
-        popupEmail.classList.add('popup-error');
     } else {
         popupName.classList.remove('popup-error');
-        popupEmail.classList.remove('popup-error');
         if (isStorageSupport) {
             localStorage.setItem('name', popupName.value);
+        }
+    }
+
+    if (!popupEmail.value) {
+        evt.preventDefault();
+        popupWindow.classList.remove('popup-window-error');
+        popupWindow.offsetWidth = popupWindow.offsetWidth;
+        popupWindow.classList.add('popup-window-error');
+        popupEmail.classList.add('popup-error');
+    } else {
+        popupEmail.classList.remove('popup-error');
+        if (isStorageSupport) {
             localStorage.setItem('email', popupEmail.value);
         }
+    }
+
+    if (!popupTextarea.value) {
+        evt.preventDefault();
+        popupWindow.classList.remove('popup-window-error');
+        popupWindow.offsetWidth = popupWindow.offsetWidth;
+        popupWindow.classList.add('popup-window-error');
+        popupTextarea.classList.add('popup-error');
+    } else {
+        popupTextarea.classList.remove('popup-error');
     }
 });
 

@@ -2,7 +2,6 @@ var slideSection = document.querySelector('.js-slider');
 var slideSelect = 'slide_current';
 var slideSelectButton = 'current';
 
-
 function initSlider(slideSection, slideSelect, slideSelectButton) {
     var slides = slideSection.querySelectorAll('.js-slider-track li');
     var buttons = slideSection.querySelectorAll('.js-slider-controls button');
@@ -31,6 +30,3 @@ function initSlider(slideSection, slideSelect, slideSelectButton) {
 }
 
 initSlider(slideSection, slideSelect, slideSelectButton);
-
-
-
