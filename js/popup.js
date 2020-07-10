@@ -8,7 +8,8 @@ document.addEventListener("DOMContentLoaded", function() {
     var popupTextarea = popupWindow.querySelector('.textarea')
     
     var isStorageSupport = true;
-    var storage = '';
+    var storageName = '';
+    var storageEmail = '';
     
     popupForm.noValidate = true;
     
