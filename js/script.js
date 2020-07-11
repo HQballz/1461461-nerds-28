@@ -1,4 +1,40 @@
 document.addEventListener("DOMContentLoaded", function() {
+    /* slider scripts */
+    var slideSection = document.querySelector('.js-slider');
+    var slideSelect = 'slide_current';
+    var slideSelectButton = 'current';
+    
+    function initSlider(slideSection, slideSelect, slideSelectButton) {
+        var slides = slideSection.querySelectorAll('.js-slider-track li');
+        var buttons = slideSection.querySelectorAll('.js-slider-controls button');
+    
+        function addActiveSlide(index) {
+            slides[index].classList.add(slideSelect);
+            buttons[index].classList.add(slideSelectButton);
+        }
+    
+        function removeActiveSlide(index) {
+            slides[index].classList.remove(slideSelect);
+            buttons[index].classList.remove(slideSelectButton);
+        }
+    
+        function activeSlide(id) {
+            buttons.forEach(function(_, index) {
+                id === index ? addActiveSlide(index) : removeActiveSlide(index);
+            });
+        }
+    
+        buttons.forEach(function(button, id) {
+            button.addEventListener('click', function() {
+                activeSlide(id);
+            });
+        });
+    }
+    
+    initSlider(slideSection, slideSelect, slideSelectButton);
+
+
+    /* popup scripts */
     var popupLink = document.querySelector('.button-address');
     var popupWindow = document.querySelector('.popup-window');
     var buttonPopupClose = popupWindow.querySelector('.cross');
@@ -82,6 +118,29 @@ document.addEventListener("DOMContentLoaded", function() {
         if (evt.keyCode === 27 && popupWindow.classList.contains('popup-window-show')) {
             evt.preventDefault();
             popupClose();
+        }
+    });
+
+
+    /* map scripts */
+    var map = document.querySelector('.map')
+    var CloseMapButton = map.querySelector('.cross-map')
+    var mapButton = document.querySelector('.map-window-show');
+
+    mapButton.addEventListener('click', function (evt) {
+        evt.preventDefault();
+        map.classList.add('map-show');
+    });
+
+   CloseMapButton.addEventListener('click', function (evt) {
+        evt.preventDefault();
+        map.classList.remove('map-show');
+    });
+
+    window.addEventListener('keydown', function (evt) {
+        if (evt.keyCode === 27 && map.classList.contains('map-show')) {
+            evt.preventDefault();
+            map.classList.remove('map-show');
         }
     });
 });
