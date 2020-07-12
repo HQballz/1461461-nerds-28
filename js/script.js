@@ -120,27 +120,4 @@ document.addEventListener("DOMContentLoaded", function() {
             popupClose();
         }
     });
-
-
-    /* map scripts */
-    var map = document.querySelector('.map')
-    var CloseMapButton = map.querySelector('.cross-map')
-    var mapButton = document.querySelector('.map-window-show');
-
-    mapButton.addEventListener('click', function (evt) {
-        evt.preventDefault();
-        map.classList.add('map-show');
-    });
-
-   CloseMapButton.addEventListener('click', function (evt) {
-        evt.preventDefault();
-        map.classList.remove('map-show');
-    });
-
-    window.addEventListener('keydown', function (evt) {
-        if (evt.keyCode === 27 && map.classList.contains('map-show')) {
-            evt.preventDefault();
-            map.classList.remove('map-show');
-        }
-    });
 });

@@ -716,6 +716,13 @@ input[type="radio"].visually-hidden {
     z-index: 2;
 }
 
+.iframe {
+    position: absolute;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+}
+
 .address-depiction {
     position: absolute;
     bottom: 65px;
@@ -725,7 +732,7 @@ input[type="radio"].visually-hidden {
     width: 219px;
     padding: 50px 50px 44px 50px;
     background-color: var(--white);
-    z-index: 3;
+    z-index: 4;
 }
 
 .address-title {
@@ -750,31 +757,6 @@ input[type="radio"].visually-hidden {
     margin-bottom: 39px;
 }
 
-.map{
-    display: none;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
-    width: 960px;
-    height: 590px;
-    z-index: 4;
-    background-color: var(--white);
-    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
-}
-
-.map iframe {
-    padding: 10px;
-}
-
-.map-show {
-    display: block;
-    animation-name: box;
-    animation-duration: 0.6s;
-}
-
 .popup-window {
     display: none;
     position: fixed;
@@ -785,7 +767,7 @@ input[type="radio"].visually-hidden {
     margin: auto;
     width: 960px;
     height: 590px;
-    z-index: 4;
+    z-index: 5;
     background-color: var(--white);
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
 }
