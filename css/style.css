@@ -1,5 +1,4 @@
 :root {
-
     --white: #ffffff;
     --white-transparent-1lvl: rgb(255, 255, 255, 0.3);
     --black-1: #000000;
@@ -33,13 +32,9 @@
     --basic-yellow: #EFC84A;
     --more-yellow: #EAB534;
     --very-yellow: #E5A722;  
-
-
     --font-normal: 400;
     --font-medium: 500;
     --font-bold: 700;
-
-
     --basic-line: 2px solid var(--grey-1);
 }
 
