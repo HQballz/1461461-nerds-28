@@ -1,8 +1,20 @@
 document.addEventListener("DOMContentLoaded", function() {
     /* slider scripts */
+    /* slider variables */
     var slideSection = document.querySelector('.js-slider');
     var slideSelect = 'slide_current';
     var slideSelectButton = 'current';
+    /* popup variables */
+    var popupLink = document.querySelector('.button-address');
+    var popupWindow = document.querySelector('.popup-window');
+    var buttonPopupClose = popupWindow.querySelector('.cross');
+    var popupForm = popupWindow.querySelector('.popup-form')
+    var popupName = popupWindow.querySelector('.name');
+    var popupEmail = popupWindow.querySelector('.email')
+    var popupTextarea = popupWindow.querySelector('.textarea')
+    var isStorageSupport = true;
+    var storageName = '';
+    var storageEmail = '';
     
     function initSlider(slideSection, slideSelect, slideSelectButton) {
         var slides = slideSection.querySelectorAll('.js-slider-track li');
@@ -30,23 +42,9 @@ document.addEventListener("DOMContentLoaded", function() {
             });
         });
     }
-    
-    initSlider(slideSection, slideSelect, slideSelectButton);
-
+    if (slideSection) initSlider(slideSection, slideSelect, slideSelectButton);
 
     /* popup scripts */
-    var popupLink = document.querySelector('.button-address');
-    var popupWindow = document.querySelector('.popup-window');
-    var buttonPopupClose = popupWindow.querySelector('.cross');
-    var popupForm = popupWindow.querySelector('.popup-form')
-    var popupName = popupWindow.querySelector('.name');
-    var popupEmail = popupWindow.querySelector('.email')
-    var popupTextarea = popupWindow.querySelector('.textarea')
-    
-    var isStorageSupport = true;
-    var storageName = '';
-    var storageEmail = '';
-    
     popupForm.noValidate = true;
     
     function popupClose() {

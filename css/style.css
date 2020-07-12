@@ -319,9 +319,8 @@ input[type="radio"].visually-hidden {
     font-weight: var(--font-bold);
 }
 
-.cart::before {
+.cart-link::before {
     content: "";
-
     position: absolute;
     top: 7px;
     left: 0px;
@@ -641,61 +640,22 @@ input[type="radio"].visually-hidden {
     justify-items: center;
     align-items: center;
     margin-bottom: 37px;
+    background-image: url('../img/seporator.svg');
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .partners-img {
     opacity: 0.2;
 }
 
-.partners-img:hover {
+.partners-img:hover, .partners-img:focus {
     opacity: 1;
 }
 
 .partners-img:active {
     opacity: 0.1;
 }
-
-.line-vertical-1 {
-    position: relative;
-}
-
-.line-vertical-1::after {
-    content: "";
-    position: absolute;
-    top: 7px;
-    right: -41px;
-    width: 2px;
-    height: 52px;
-    border-right: 2px solid var(--grey-1);
-}
-
-.line-vertical-2 {
-    position: relative;
-}
-
-.line-vertical-2::after {
-    content: "";
-    position: absolute;
-    top: 19px;
-    right: -46px;
-    width: 2px;
-    height: 52px;
-    border-right: 2px solid var(--grey-1);
-}
-
-.line-vertical-3 {
-    position: relative;
-}
-
-.line-vertical-3::after {
-    content: "";
-    position: absolute;
-    right: -58px;
-    width: 2px;
-    height: 52px;
-    border-right: 2px solid var(--grey-1);
-}
-
 
 
 /* partners stle end (in developing)*/
@@ -704,9 +664,14 @@ input[type="radio"].visually-hidden {
 
 .address {
     position: relative;
-    width: 1440px;
     margin: 0 auto; 
     z-index: 1;
+}
+
+.map-img {
+    position: relative;
+    margin: 0 auto;
+    width: 1440px;
 }
 
 .marker {
@@ -718,6 +683,7 @@ input[type="radio"].visually-hidden {
 
 .iframe {
     position: absolute;
+    top: 0;
     left: 0;
     z-index: 3;
     width: 100%;
@@ -936,7 +902,7 @@ input[type="radio"].visually-hidden {
     background-color: var(--grey-2);
 }
 
-.social-icon:hover {
+.social-icon:hover, .social-icon:focus {
     background-color: var(--basic-red);
 }
 
@@ -1446,18 +1412,21 @@ fieldset .legend {
     position: absolute;
     bottom: 0;
     display: none;
+    box-sizing: border-box;
+    padding: 26px 53px 44px 52px;
     text-align: center;
     width: 100%;
     min-height: 231px;
+    max-height: 576px;
     background-color: var(--grey-1);
     border-radius: 0px 0px 5px 5px;
+    overflow: auto;
 }
 
 .catalog-text {
     width: 255px;
     margin: 0;
     margin-bottom: 33px;
-    margin-left: 55px;
     font-size: 16px;
     line-height: 18px;
     color: var(--grey-3);
