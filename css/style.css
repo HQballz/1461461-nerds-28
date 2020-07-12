@@ -687,6 +687,7 @@ input[type="radio"].visually-hidden {
     left: 0;
     z-index: 3;
     width: 100%;
+    border: none;
 }
 
 .address-depiction {
