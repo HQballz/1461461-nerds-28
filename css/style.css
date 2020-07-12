@@ -1,7 +1,5 @@
-/*  Variables  */
-
 :root {
-    /* colors */
+
     --white: #ffffff;
     --white-transparent-1lvl: rgb(255, 255, 255, 0.3);
     --black-1: #000000;
@@ -36,19 +34,14 @@
     --more-yellow: #EAB534;
     --very-yellow: #E5A722;  
 
-    /* font-weights */
+
     --font-normal: 400;
     --font-medium: 500;
     --font-bold: 700;
 
-    /* line-style */
+
     --basic-line: 2px solid var(--grey-1);
 }
-
-
-/* global */
-
-/* roboto-regular - latin_cyrillic */
 
 @font-face {
     font-family: "Roboto";
@@ -58,8 +51,6 @@
     font-style: normal;
     font-display: swap;
 }
-
-  /* roboto-500 - latin_cyrillic */
 
   @font-face {
     font-family: "Roboto";
@@ -71,8 +62,6 @@
     font-weight: 500;  
     font-display: swap;        
 }
-
-  /* roboto-700 - latin_cyrillic */
 
   @font-face {
     font-family: "Roboto";
@@ -237,12 +226,6 @@ input[type="radio"].visually-hidden {
     margin: 0; 
 }
 
-
-/* header style start */
-
-/* Main navigation */
-
-
 .main-header {
     display: flex;
     flex-direction: column;
@@ -329,10 +312,6 @@ input[type="radio"].visually-hidden {
     background-image: url("../img/cart-icon.svg");
 }
 
-
-
-/* User navigation */
-
 .site-navigation a,
 .cart a {
   color: var(--black-1);
@@ -349,15 +328,6 @@ input[type="radio"].visually-hidden {
 .cart a:active {
     color: var(--black-1-transparent-2lvl);
 }
-
-/* header style end */
-
-
-/* index style start */
-
-/* main style start*/
-
-/* advantages style */
 
 .advantages {
     position: relative;
@@ -475,8 +445,6 @@ input[type="radio"].visually-hidden {
     padding: 17px 54px 15px;  
 }
 
-/* products style */ 
-
 .products {
     margin-bottom: 39px;
     border-bottom: var(--basic-line);
@@ -510,9 +478,6 @@ input[type="radio"].visually-hidden {
     font-weight: var(--font-bold);
     text-transform: uppercase;    
 }
-
-
-/* activity style */
 
 .activity {
     display: flex;
@@ -626,13 +591,10 @@ input[type="radio"].visually-hidden {
     line-height: 18px;
 }
 
-/* partners style start (in developing) */
-
 .partners {
     margin-bottom: 80px;
     border-bottom: var(--basic-line);
 }
-
 
 .partners-list {
     display: grid;
@@ -656,11 +618,6 @@ input[type="radio"].visually-hidden {
 .partners-img:active {
     opacity: 0.1;
 }
-
-
-/* partners stle end (in developing)*/
-
-/* pipup style */
 
 .address {
     position: relative;
@@ -868,11 +825,6 @@ input[type="radio"].visually-hidden {
     color: var(--white);
 }
 
-/* main style end */
-
-
-/* footer style start */
-
 .footer {
     position: relative;
     margin-top: 56px;
@@ -880,10 +832,6 @@ input[type="radio"].visually-hidden {
     display: flex;
     justify-content: space-between;
 }
-
-
-
-/* social style */
 
 .social-list {
     margin: 0;
@@ -939,11 +887,6 @@ input[type="radio"].visually-hidden {
     background-position: center;
 }
 
-
-
-
-/* attraction style */
-
 .attractions {
     width: 660px;
     margin-top: 9px;
@@ -963,15 +906,6 @@ input[type="radio"].visually-hidden {
     color: var(--black-3);
 }
 
-/* footer style end */
-
-/* index style end */
-
-
-/* catalog style start */
-
-/* main style */
-
 .page-catalog {
     display: grid;
     grid-template-columns: 260px 1fr;
@@ -979,8 +913,6 @@ input[type="radio"].visually-hidden {
     align-content: start;
     margin-bottom: 59px;
 }
-
-/* title style */
 
 .page-title {
     width: 100%;
@@ -991,8 +923,6 @@ input[type="radio"].visually-hidden {
     text-align: center;
     background-color: var(--grey-1);     
 }
-
-/* filters style */
 
 .filters {
     width: 260px;
@@ -1014,9 +944,6 @@ input[type="radio"].visually-hidden {
     margin: 0;
 }
   
-
-/* form style */
-
 .form-range-label {
     font-size: 16px;
     line-height: 22px;
@@ -1143,7 +1070,6 @@ fieldset .legend {
     margin-bottom: 17px;
 }
 
-
 .filter-input-radio + label::before {
     content: "";
 
@@ -1161,7 +1087,6 @@ fieldset .legend {
 .filter-input-radio:focus + label::before {
     opacity: 1;
 }
-
 
 .filter-input-radio:checked + label::after {
     content: "";
@@ -1187,7 +1112,6 @@ fieldset .legend {
 .filter-checkbox .legend {
     margin-bottom: 17px;
 }
-
 
 .filter-input-checkbox + label::before {
     content: "";
@@ -1226,10 +1150,6 @@ fieldset .legend {
 .filter-input:disabled + .label {
     opacity: 0.3;
 }
-
-/* catalog style */
-
-
 
 .sorting {
     color: var(--black-1-transparent-2lvl);
@@ -1463,13 +1383,6 @@ fieldset .legend {
 .button-next {
     padding: 12px 77px 15px 78px;
 }
-
-
-
-/* catalog style end */
-
-
-/* Animations */
 
 @keyframes box {
     from {

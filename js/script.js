@@ -1,10 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
-    /* slider scripts */
-    /* slider variables */
     var slideSection = document.querySelector('.js-slider');
     var slideSelect = 'slide_current';
     var slideSelectButton = 'current';
-    /* popup variables */
     var popupLink = document.querySelector('.button-address');
     var popupWindow = document.querySelector('.popup-window');
     var buttonPopupClose = popupWindow.querySelector('.cross');
@@ -15,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var isStorageSupport = true;
     var storageName = '';
     var storageEmail = '';
+    popupForm.noValidate = true;
     
     function initSlider(slideSection, slideSelect, slideSelectButton) {
         var slides = slideSection.querySelectorAll('.js-slider-track li');
@@ -43,9 +41,6 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
     if (slideSection) initSlider(slideSection, slideSelect, slideSelectButton);
-
-    /* popup scripts */
-    popupForm.noValidate = true;
     
     function popupClose() {
         popupWindow.classList.remove('popup-window-show');
