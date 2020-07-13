@@ -1,22 +1,22 @@
 document.addEventListener("DOMContentLoaded", function() {
-    var slideSection = document.querySelector('.js-slider');
-    var slideSelect = 'slide_current';
-    var slideSelectButton = 'current';
-    var popupLink = document.querySelector('.button-address');
-    var popupWindow = document.querySelector('.popup-window');
-    var buttonPopupClose = popupWindow.querySelector('.cross');
-    var popupForm = popupWindow.querySelector('.popup-form')
-    var popupName = popupWindow.querySelector('.name');
-    var popupEmail = popupWindow.querySelector('.email')
-    var popupTextarea = popupWindow.querySelector('.textarea')
+    var slideSection = document.querySelector(".js-slider");
+    var slideSelect = "slide_current";
+    var slideSelectButton = "current";
+    var popupLink = document.querySelector(".button-address");
+    var popupWindow = document.querySelector(".popup-window");
+    var buttonPopupClose = popupWindow.querySelector(".cross");
+    var popupForm = popupWindow.querySelector(".popup-form")
+    var popupName = popupWindow.querySelector(".name");
+    var popupEmail = popupWindow.querySelector(".email")
+    var popupTextarea = popupWindow.querySelector(".textarea")
     var isStorageSupport = true;
-    var storageName = '';
-    var storageEmail = '';
+    var storageName = "";
+    var storageEmail = "";
     popupForm.noValidate = true;
     
     function initSlider(slideSection, slideSelect, slideSelectButton) {
-        var slides = slideSection.querySelectorAll('.js-slider-track li');
-        var buttons = slideSection.querySelectorAll('.js-slider-controls button');
+        var slides = slideSection.querySelectorAll(".js-slider-track li");
+        var buttons = slideSection.querySelectorAll(".js-slider-controls button");
     
         function addActiveSlide(index) {
             slides[index].classList.add(slideSelect);
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     
         buttons.forEach(function(button, id) {
-            button.addEventListener('click', function() {
+            button.addEventListener("click", function() {
                 activeSlide(id);
             });
         });
@@ -43,26 +43,26 @@ document.addEventListener("DOMContentLoaded", function() {
     if (slideSection) initSlider(slideSection, slideSelect, slideSelectButton);
     
     function popupClose() {
-        popupWindow.classList.remove('popup-window-show');
-        popupWindow.classList.remove('popup-window-error');
+        popupWindow.classList.remove("popup-window-show");
+        popupWindow.classList.remove("popup-window-error");
     }
 
     function popupError() {
-        popupWindow.classList.remove('popup-window-error');
+        popupWindow.classList.remove("popup-window-error");
         popupWindow.offsetWidth = popupWindow.offsetWidth;
-        popupWindow.classList.add('popup-window-error');
+        popupWindow.classList.add("popup-window-error");
     }
     
     try {
-        storageName = localStorage.getItem('name');
-        storageEmail = localStorage.getItem('email');
+        storageName = localStorage.getItem("name");
+        storageEmail = localStorage.getItem("email");
     } catch (err) {
         isStorageSupport = false;
     }
     
-    popupLink.addEventListener('click', function (evt) {
+    popupLink.addEventListener("click", function (evt) {
         evt.preventDefault();
-        popupWindow.classList.add('popup-window-show');
+        popupWindow.classList.add("popup-window-show");
     
         if (storageName) {
             popupName.value = storageName;
@@ -70,45 +70,45 @@ document.addEventListener("DOMContentLoaded", function() {
         popupEmail.focus();
     });
     
-    buttonPopupClose.addEventListener('click', function (evt) {
+    buttonPopupClose.addEventListener("click", function (evt) {
         evt.preventDefault();
         popupClose();
     });
     
-    popupForm.addEventListener('submit', function (evt) {
+    popupForm.addEventListener("submit", function (evt) {
         if (!popupName.value) {
             evt.preventDefault();
             popupError();
-            popupName.classList.add('popup-error');
+            popupName.classList.add("popup-error");
         } else {
-            popupName.classList.remove('popup-error');
+            popupName.classList.remove("popup-error");
             if (isStorageSupport) {
-                localStorage.setItem('name', popupName.value);
+                localStorage.setItem("name", popupName.value);
             }
         }
     
         if (!popupEmail.value) {
             evt.preventDefault();
             popupError();
-            popupEmail.classList.add('popup-error');
+            popupEmail.classList.add("popup-error");
         } else {
-            popupEmail.classList.remove('popup-error');
+            popupEmail.classList.remove("popup-error");
             if (isStorageSupport) {
-                localStorage.setItem('email', popupEmail.value);
+                localStorage.setItem("email", popupEmail.value);
             }
         }
     
         if (!popupTextarea.value) {
             evt.preventDefault();
             popupError();
-            popupTextarea.classList.add('popup-error');
+            popupTextarea.classList.add("popup-error");
         } else {
-            popupTextarea.classList.remove('popup-error');
+            popupTextarea.classList.remove("popup-error");
         }
     });
     
-    window.addEventListener('keydown', function (evt) {
-        if (evt.keyCode === 27 && popupWindow.classList.contains('popup-window-show')) {
+    window.addEventListener("keydown", function (evt) {
+        if (evt.keyCode === 27 && popupWindow.classList.contains("popup-window-show")) {
             evt.preventDefault();
             popupClose();
         }
